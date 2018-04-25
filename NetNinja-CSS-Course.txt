@@ -8,4 +8,13 @@ Co kurs obejmuje:
 - The box model - pola, marginesy, przesunięcia
 - Zastosowanie praktyczne - budujemy strone
 
+Lekcja-2
+Co to jest CSS?
+CSS jako prezentacja HTML.
+Nieustannie rozwijany - aktualnie CSS3
+Wspierany przez wiekszość przeglądarek.
+
+Poznajemy jak ogromny wpływ ma CSS na wygląd strony poprzez usuniecie i przywrocenie pliku css dla strony TheNetNinja. 
+Przy projektowaniu strony wazne aby strona wygladala rownie dobrze na roznych urzadzeniach (PC, smartfony, tablety, smart-TV, ...) i przegladarkach.
+
 
