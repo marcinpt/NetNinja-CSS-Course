@@ -17,4 +17,9 @@ Wspierany przez wiekszość przeglądarek.
 Poznajemy jak ogromny wpływ ma CSS na wygląd strony poprzez usuniecie i przywrocenie pliku css dla strony TheNetNinja. 
 Przy projektowaniu strony wazne aby strona wygladala rownie dobrze na roznych urzadzeniach (PC, smartfony, tablety, smart-TV, ...) i przegladarkach.
 
+Lekcja-3
+Domyslne Style Przegladarki
+Ważne aby mieć świadomość o dymyslnych css przegladarki poniewaz tworzac wlasne zmieniamy je.
+Istnieje tez cos co nazywa sie resetowaniem css przegladarek - ma na celu ujednolicenie wyswietlanie stron jednakowo na wszystkich przegladarkach tylko i wylacznie opartych na wlasnych stylach - ma to swoje plusy i minusy. Z czasem sami bedzemy mogli zdecydowac kiedy i czy w ogole stosowac reset css.
+
 
