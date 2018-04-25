@@ -1,0 +1,11 @@
+Lekcja-1
+Wprowadzenie do CSS
+Co kurs obejmuje:
+- Co to jest CSS
+- Składania CSS
+- Pojecia: element, klasy i ID selektory
+- Formatowanie tekstu, tła
+- The box model - pola, marginesy, przesunięcia
+- Zastosowanie praktyczne - budujemy strone
+
+
