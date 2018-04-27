@@ -65,5 +65,11 @@ Jest jednak dobry gdy mamy do czynienia z pojedynczymi przypadkami gdzie chcemy 
 
 - style wbudowanych czyli w nagłówku html - za pomoca tagow <style></style>, gdzie wewn ustalamy style za 	pomoca selektorów (id, klas i tagow) i deklaracji. Znacznie wygodniejszy od inline ale caly czas problematyczny gdy mamy wiele podstron.
 
+Do cwiczen 
+index.html bez zmian
+tworzymy plik contakt.html
+
+Lekcja-5.1
+Zastosowanie stylów Inline w index.html - zarówno w sekcyjnych tagach div jak i konkretnych pojedynczych tagach p. Zwroc uwage na trudnosc i pracochlonnosc przy tym sposobie stylowania.
 
 
