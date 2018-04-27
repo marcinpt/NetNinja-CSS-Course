@@ -72,4 +72,8 @@ tworzymy plik contakt.html
 Lekcja-5.1
 Zastosowanie stylów Inline w index.html - zarówno w sekcyjnych tagach div jak i konkretnych pojedynczych tagach p. Zwroc uwage na trudnosc i pracochlonnosc przy tym sposobie stylowania.
 
+Lekcja-5.2
+Wczesnejsze stylowanie inline dla tagu p zastepujemy stylowaniem wbudowanycm (embedded) ktory umieszczamy w naglowku html w index.html. Tym razem jest znacznie mniej pracy jednakze takie stylowanie działa tylko dla danej strony - np w naszym przypadku dla contact.html juz nie. Aby takie stylowanie zadziałało w contact.html musimy skopiować tagi i wnetrze - <style>....</style> rowniez do niego.
+Zwroc uwage ze i przy tym sposobie - jesli masz np 20 postron - musisz taka operacje powtorzyc wielokrotnie - wiec wbudowane stylowanie tez jest pracochlonne.
+
 
