@@ -80,4 +80,7 @@ Lekcja-5.3.1
 W index.html tworzymy naglowek z tagiem p "oznaczony" klasą o nazwie welkome. 
 W tym przykladzie pokazujemy ze jesli mamy tylko jeden plik to nie musimy tworzyc zewn pliku css, ktory ma zasieg globalny na wszystkie nasze pliki html - wystarczy wstawic stylowanie wbudowane. W naszysm przykladzie - gdy mamy oznaczona klasa nasz naglowek - tworzymy selektor .welcome i odpowiednie deklaracje.
 
+Lekcja-5.3.2
+Uzyskujemy podobny efekt jak wczesniej ale z zastosowaniem inline. Ten sposob tez w tych samych przypadkach tzn gdy mamy jedna strone.
+
 
