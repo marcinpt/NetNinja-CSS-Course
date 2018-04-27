@@ -22,4 +22,36 @@ Domyslne Style Przegladarki
 Ważne aby mieć świadomość o dymyslnych css przegladarki poniewaz tworzac wlasne zmieniamy je.
 Istnieje tez cos co nazywa sie resetowaniem css przegladarek - ma na celu ujednolicenie wyswietlanie stron jednakowo na wszystkich przegladarkach tylko i wylacznie opartych na wlasnych stylach - ma to swoje plusy i minusy. Z czasem sami bedzemy mogli zdecydowac kiedy i czy w ogole stosowac reset css.
 
+Lekcja-4
+Składnia CSS
+CSS jako zbiór zasad (rules). Kazda zasada moze dotyczyć odpowiednio każdego okreslonego tagu w html'u. Gdy mamy juz okreslony tag docelowy ustalamy dla niego wizualne wlasciwosci, ktore powodują że wyglada tak jak chcemy.
+Dla przykładu mozemy
+- okreslic ze wszystkie p tagi jakie sa na calej stronie maja miec czcionke 12px...
+- okreslic ze wszystkie p tagi z okreslonym id maja miec czcionke 12px...
+- okreslic ze wszystkie tagi w okreslonym id mają miec np pozycje absolutna, gorny margines 0 i lewy 0...
+
+Kazda zasada sklada sie z dwoch czesci - pierwsza od lewej to tzw selektor, druga to deklaracja.
+Selektor to porostu okreslenie jakich tagów ma zasada dotyczyć (patrz powyzej). Jesli maja byc związane z jakim ID to nazwa ID musi byc poprzedzona znakiem #. Deklaracja to wlasciwosci wizualne - musza byc zawarte w {}. Przykład:
+#page-header {font-size: 10px}
+Czyli wszystko co jest w div z id page-header ma miec czionke 10px
+
+Selektory moga wskazywac na wiele rzeczy - nazwy tagow, ID, klas i in. Przyłady:
+
+#header p {declaration} - dotyczy tagow p w div o id header
+.comment div {declaration} - dotyczy klas comment we wszystkich elementach div
+li {declaration} - wszystkie tagi li jakie sa w dokumencie html
+
+Deklaracje zawierają właśćiwości w parze z ich wartościami. Deklaracja musi byc zawarta w klamrach {} (curly brace), wlasciwosc zakończona : (colon) a cala para musi konczyc się ; (semicolon).
+Pary właściwość z ich warosciami mozemy umieszczac - jesli jest ich wiele - jeden za drugim lub jeden pod drugim.
+Przykłady:
+
+#selector {font-size: 10px;}
+
+#selector {
+	font-size: 10px;
+	color: red;
+}
+
+Praktyczne zastowowania ww zagadnien w utworzonym pliku syntax.css ktory styluje elementy z index.html (brak linkowania do css bo chodzi tylko o pokazanie składni...).
+
 
