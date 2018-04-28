@@ -91,4 +91,17 @@ Usuwamy wnetrze syntax.css
 W index.html i contact.html wstawiamy link do naszego zewn arkusza styli - syntax.css
 Przechodzimy do edycji pliku css - tworzymy reguly i sprawdzamy jaki wplyw ma wyglad naszych obu stron html (w przegladarce)
 
+Lekcja-7
+CSS comments - komentarze css
+Składania komentarzy dla css to:
+/* ... */
+
+przykłady uzycia w syntax.css
+Komentarze służa do bezpiecznych notatek i opisów ktore nie wpływają na działanie kodu. 
+Inne zastosowanie to tymczasowe wyłączenie fragmentu kodu.
+Przydatne rowniez do twozenia opisowych naglowkow z informajami od autora kodu.
+
+
+
+
 
