@@ -101,7 +101,10 @@ Komentarze służa do bezpiecznych notatek i opisów ktore nie wpływają na dzi
 Inne zastosowanie to tymczasowe wyłączenie fragmentu kodu.
 Przydatne rowniez do twozenia opisowych naglowkow z informajami od autora kodu.
 
-
-
+Lekcja-8
+Targeting elements - elementy jako cele
+W tej lekcji pokazemy zastosowanie najprostrzych selektorow - wskazujace tagi html'owe.
+Na przykładzie contact.html (zostawilismy kilka starych, dodalismy kilka nowych tagów: p, a, span, h1, div) 
+Na ich przykładzie stworzylismy zasady (rules) w naszym syntax.css.
 
 
