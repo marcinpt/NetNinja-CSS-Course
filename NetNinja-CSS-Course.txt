@@ -83,4 +83,12 @@ W tym przykladzie pokazujemy ze jesli mamy tylko jeden plik to nie musimy tworzy
 Lekcja-5.3.2
 Uzyskujemy podobny efekt jak wczesniej ale z zastosowaniem inline. Ten sposob tez w tych samych przypadkach tzn gdy mamy jedna strone.
 
+Lekcja-6
+External Style Sheets - Zewnetrzne arkusze styli
+Powtorka z kusrsu html - Style zawarte w osobnym pliku *.css do ktorego umieszczamy w nagłówku kazdego pliku html link. Kazda zmiana czy ustawienie reguły (rule) w takim pliku oddziaływuje wtedy na kazdy plik html. Jest duzo prostszy i szybszy niz style wbudowane czy inline.
+W czesci praktycznej usuwamy  działania styli z poprzedniej lekcji.
+Usuwamy wnetrze syntax.css
+W index.html i contact.html wstawiamy link do naszego zewn arkusza styli - syntax.css
+Przechodzimy do edycji pliku css - tworzymy reguly i sprawdzamy jaki wplyw ma wyglad naszych obu stron html (w przegladarce)
+
 
