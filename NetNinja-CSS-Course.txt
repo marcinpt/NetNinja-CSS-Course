@@ -107,4 +107,22 @@ W tej lekcji pokazemy zastosowanie najprostrzych selektorow - wskazujace tagi ht
 Na przykładzie contact.html (zostawilismy kilka starych, dodalismy kilka nowych tagów: p, a, span, h1, div) 
 Na ich przykładzie stworzylismy zasady (rules) w naszym syntax.css.
 
+Lekcja-9
+Classes and ID's
+Powtorka lekcji 14 z kursu HTML
+
+Oba sa sposobem na identyfikacje i opis elementow w kodzie html.
+Klasy moga byc uzyte wielokrotnie w kodzie strony, ID tylko raz i musza miec nazwe unikalna.
+Cwiczenia
+w contact.html dodajemy pare nowych linijek w sekcji body: h1 h2 w div z id header, h2 poza nia i 3 linijki span z clas deck. Czyscimy wnetrze syntax.css. Wstawiamy tam zasady:
+
+- dla sel h2 - tu zasieg działania jest na wszystkie h2 jakie sa w doc html.
+
+- dla elementu (ELEMENTU ...nie h2) z id content-header - tu zasieg dzialania tylko na h2 z podanym id (bo tlko h2 znajduje sie w elemencie z podanym id!) - zauwaz! - ze ta zasada nadpisuje styl z poprzedniej zasady! Wazne - przed nazwa id selektora zawsze piszemy "#"
+Podobnie jak powyzsze 2 tylko teraz z klasami:
+
+- dla span - zasieg na wszystkie span'y (apropo naszej deklaracji - wlasciwosc display z wartoscia block powoduje wyswietlenie kolejnych elementow od nowej lini).
+
+- dla elementow z klasa deck - tu zasieg na te elementy gdzie mamy klase deck. Podobnie jak wyzej nastepuje nadpisanie wczesniejszej zasady. Wazne - skladnia - przed nazwa klasy selektora zawsze podajemy ".".
+
 
