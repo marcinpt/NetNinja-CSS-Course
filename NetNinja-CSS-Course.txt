@@ -125,4 +125,14 @@ Podobnie jak powyzsze 2 tylko teraz z klasami:
 
 - dla elementow z klasa deck - tu zasieg na te elementy gdzie mamy klase deck. Podobnie jak wyzej nastepuje nadpisanie wczesniejszej zasady. Wazne - skladnia - przed nazwa klasy selektora zawsze podajemy ".".
 
+Lekcja-10
+THE CASCADE & CSS CONFLICTS.
+Kiedy wystepuje konflikt? - Jesli mamy w pliku css 2 zasady gdzie selektory sa IDENTYCZNE a w deklaracji zasad wystepuja takie same wlasciwosci ale z roznymi wartosciami. W takiej sytuacji "wygrywa" zasada która jest najnizej kaskady. Kaskady dlatego ze zasady w css aplikuja sie od-gory-do dolu (jak ...wodospad - kaskada). Najnizsza zasada w takich konfliktach nadpisuje zasady górne.
+Czasami taki konflikt tworzymy swiadomie - w celu dokonania jak najszybszej zmiany bo wiemy ze jesli ja umiescimy w dolnej czesci pliku css (kaskady) to taka zasada zostanie zastosowana i ostatecznie zwizualizowana w przegladarce. Przyklad:
+W oczyszczonym pliku syntax.css zamieszczamy 2 podobne zasady z rozniacymi sie deklaracjami -2x: span{...}
+1-szy z kolorowaniem niebieskim, 2ga - czerwonym. Ostatecznie w przegladarce widzimy kolor czerwony.
+
+Kolejny przykład swiadomego tworzenia konfliktu - tym razem z zastosowaniem stylow wbydowanych i inline.
+Stosujemy gdy chcemy nadpisac style zawarte w pliku css - wbudowane w kod html nadpisuja external css (plik css), a  nastepnie Inline nadpisują wbudowane (ostateczne). Przyklad w pliku contact.html.
+
 
