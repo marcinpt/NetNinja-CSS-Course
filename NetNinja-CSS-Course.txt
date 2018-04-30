@@ -135,4 +135,46 @@ W oczyszczonym pliku syntax.css zamieszczamy 2 podobne zasady z rozniacymi sie d
 Kolejny przykład swiadomego tworzenia konfliktu - tym razem z zastosowaniem stylow wbydowanych i inline.
 Stosujemy gdy chcemy nadpisac style zawarte w pliku css - wbudowane w kod html nadpisuja external css (plik css), a  nastepnie Inline nadpisują wbudowane (ostateczne). Przyklad w pliku contact.html.
 
+Lekcja-11
+Inheritance - dziedziczenie
+Struktura tagów w html to - w zakresie tworzenia stylów - struktura dziedziczna. Jesli nadamy jakis styl dla tagu boody to wszystkie tagi bedace w body beda te style dziedziczyć. Chcąc zmienic styl dla konkretnego elementu wewn body musimy go stworzyc glebiej w strukturze - nadpisujac te z body (czyli jest to jakby rodzaj konfliktu swiadomego).
+
+UWAGA - nie wszystkie style sa dzidziczone!!! - to z powodu istnienia styli domyslnych przegladarki. Np a tag nie odziedziczy deklaracji z kolorem czy czionka bo przegladarka w takim przypadku nada im swoje domyslne. Dopiero jawna zmiana tego typu tagow spowoduje zastosowanie stylu.
+
+W Cwiczeniu usuwamy wszystko z syntax.css
+w contact.html usuwamy style wbud i inline z poprzed lekcji, robimy 2ga sekcje divami i usuwamy link googla.
+Tworzymy w css regule nadajaca kolor czerwony dla body - sprawdzamy w przegl - wszystko czerwone - ok
+Nastapilo dziedziczenie stylu nawszystkie el wewn body.
+Teraz tworzymy nadpisasnie stylu dziedziczonego (swiadomy konflikt). Tworzymy styl dla tagów div - zmieniamy kolor na niebieski - srawdzamy - wszystko co wewn divów jest niebieskie - ok.
+Kolejne nadpisanie - zmieniamy dziedziczony od div kolor p-tagów. Sprawdzamy - sa- zmiany - ok.
+
+Sprawdzamy teraz działanie styli domyslnych rzegladarki - czyli el na ktore nie działa dziedziczenie.
+Tworzymy link a w body ale na zewn divów - czyli spodziewamy sie koloru dziedziczonego od body - czerwonego. Sprawdzamy - jest niebieski i podkreslony - to styl domyslny przegladarki.
+Pokazujemy co przegladarka robi z tagiem a "poza nazym wzrokiem" zapisujac to jaka regula dla a (na koncu css). Aby jednak zmienic style wystarczy taka regule utworzyc i nadac inne wartosci - nadajemy kolor zolty. Sprawdzamy - jest zolty - ok
+
+Lekcja-12
+SELECTOR SPECYFICITY - CZYLI SIŁA (WAGA) SELEKTORÓW.
+Konflikty cd...
+W CSS Specyficity pomaga nam rozwiązywać problemy z konfliktami.
+Gdy selectory sa identyczne to - jak wczesniej bylo - wygrywa ten ktory znajduje sie najnizej.
+W przypadku konfliktów gdzie selektory nie są identyczne ale dochodzi do "nałożenia się" zasięgów zasad na jakis element - z pomoca przychodzi siła selektorów zwana SPECYFICITY. Polega ona na punktacji ktora zalezna jest od tego czym poslugujemy sie w danym selektorze - mowimy wtedy ze jakis selektor jest bardziej specyficzny niz inny. I tak jesli w selektorze wystepuje:
+
+ID 's		= 100pkt
+Class's		=  10pkt
+elemnets (tags) =   1pkt
+
+UWAGA - Specyficznosc selektorów w przypadku konfliktów gdzie wystepuje dziedzizenie (niebezposrednio) nie bedzie mialo znaczenia! Tagi dzieci dzidziczace po rodzicach nie maja juz tej wagi co rodzice! Patrz Cw.3
+
+Cwiczenia:
+1sze
+Czyscimy syntax.css i oznaczamy sobie 2ga sekcje id'kiem o nazwie main-content
+Tworzymy konflikt - 2 zasady - 1sza z uzyciem w selektorze ID, 2ga z uzyciem elementu (tagu). Efekt - konflikt wygrywa 1szy ponieważ ma wieksze specyficity (100pkt+1), a 2gi ma tylko 1pkt. Uwaga tutaj konfliktem jest tylko ten wspolny dla obu zasad p tag i tylko dla niego liczy sie wygranie konfliktu - bedzie czerwony. Pozostale p tagi w dokumencie beda czarne.
+
+2gie - oznaczamy sobie w 2giej sekcji 2gi paragraf klasą o nazwie test (w celu utworzenia selektora wskazujacego na niego). Tworzymy zasade z uzyciem selektora zawierajacego nasza klase gdzie kolorujemy nasz paragraf na zielono. Sprawdzamy - NIE jest zielony! Dlaczego? - bo specyficznosc czyli sila naszego selektora jest za slaba w stosunku do wczesniejszego zawierajacego id (101>10). Dlatego nasza reguła nie zadziała.
+
+Teraz wprowadzimy element gdzie zadziała mechanizm dziedziczennia. Wstawimy tag Strong w 1szy paragraf naszej 2-giej sekcji. Nastepne wprowadzony element o-stylujemy w css i pokazemy tym samym ze styl ten zadziała - bo jak wczesniej wspomnielismy dziedziczenie po rodzicach to tylko dziedziczenie stylu ale bez wagi (siły) i pozniejsza jego zmiana w css - gdzie bedzie tylko 1pkt - bedzie łatwa i mozliwa.
+
+Na powyzszym ost przykladzie pokazujemy 2 sposoby zadziałania naszych stylów na dany element (w naszym przypadku tag strong) Niejawnie poprzez 1sza regule gdzie styl dla strong zostanie odziedziczony od p tagu w tej sekcji, ale w sposób jawny - poprzez wyrazny selektor.
+Styl dziedziczony to styl niejawny (implicit), który moge nadpisac w sposob jawny i wyrazny (explicit).
+
 
