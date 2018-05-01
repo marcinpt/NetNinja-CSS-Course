@@ -200,9 +200,20 @@ Mowimy ze wszystkie tagi w naszej 2 sekcji (dzisiaj na tej bedziemy pracować) t
 
 W jaki sposób pomaga w css koncept potomstwa?
 Powiedzmy ze chcemy nadac styl dla p tagow wewn sekcji2 i wewn podsekcji. Nie chcemy obejmowac stylem p tagu bedacego na zewn sekcji.
-Tworzymy selektor skladajacy sie na 1m mcu z elementu-rodzica (u nas bedzie to id main-content) a nastepnie po spacji (ktora jest informacja ze kolejny element id, klasa czy tag bedzie elementem-potomkiem) jego potomek.
+Tworzymy selektor skladajacy sie na 1m mcu z elementu-nadrzednego (u nas bedzie to id main-content) a nastepnie po spacji (ktora jest informacja ze kolejny element id, klasa czy tag bedzie elementem-potomkiem) jego potomek.
 Teraz gdy zadaniem naszym byloby nadanie stylu p wewn podsekcji - to mozemy tak zmodyfikowac nasz selektor 
-- ze zamienimy rodzica na id z podsekcji
+- ze zamienimy el-nadrzedny na id z podsekcji
 - ze bedzie rozbudowany o id podsekcji, ale wtedy: UWAGA - nasz selektor bedzie wtedy bardzo specyficzny czyli bedzie nam go w razie potrzby trudno nadpisac. Dlatego staramy sie nie rozbudowywac selektorow w ten sposob - tworzymy tak specyficzny aby tylko styl zadziałał.
+
+Lekcja-16
+CHILD SELECTORS
+Jaka roznica pomiedzy child a decendant - niewielkla: potomkmowie to wszystkie elementy zagniezdzone wewn el nadrzednego, a dziecko to bezposredni potomek rodzica, tylko 1 poziom w glab
+Jak tworzymy selektor?
+Pomiedzy rodzicem a dzieckiem wstawiamy  tzw kombinator - >
+Wiec w odroznieniu do zadania zlekcji-15 regula:
+
+#main-content > p{...}
+
+nada styl tylko bezposrenim dziciom p - a nie wszystkim potomkom jak wczesniej.
 
 
