@@ -192,4 +192,17 @@ Najpierw robimy dla p - potem kopiujemy cala regule kilkukrotnie modyfikujac poz
 UWAGA - zamiast tego - mozemy ustawic wszytsko jedna regula dla wielu selektorow. Wypisujemy je odzielajac jeden od 2giego przecinkiem. 
 Patrz przyklad syntax.css i contact.html.
 
+Lekcja-15
+DESCENDANTS SELECTORS - SELEKTORY POTOMKOW
+
+W contact.html w 2giej sekcji tworzymy podsekcje (zagnizdzony div), syntax.css czyscimy.
+Mowimy ze wszystkie tagi w naszej 2 sekcji (dzisiaj na tej bedziemy pracować) to potomstwo tagu nadrzednego - rodzica (div) - podobnie w kolejnym zagniezdzeniu.
+
+W jaki sposób pomaga w css koncept potomstwa?
+Powiedzmy ze chcemy nadac styl dla p tagow wewn sekcji2 i wewn podsekcji. Nie chcemy obejmowac stylem p tagu bedacego na zewn sekcji.
+Tworzymy selektor skladajacy sie na 1m mcu z elementu-rodzica (u nas bedzie to id main-content) a nastepnie po spacji (ktora jest informacja ze kolejny element id, klasa czy tag bedzie elementem-potomkiem) jego potomek.
+Teraz gdy zadaniem naszym byloby nadanie stylu p wewn podsekcji - to mozemy tak zmodyfikowac nasz selektor 
+- ze zamienimy rodzica na id z podsekcji
+- ze bedzie rozbudowany o id podsekcji, ale wtedy: UWAGA - nasz selektor bedzie wtedy bardzo specyficzny czyli bedzie nam go w razie potrzby trudno nadpisac. Dlatego staramy sie nie rozbudowywac selektorow w ten sposob - tworzymy tak specyficzny aby tylko styl zadziałał.
+
 
