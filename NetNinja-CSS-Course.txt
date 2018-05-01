@@ -177,4 +177,12 @@ Teraz wprowadzimy element gdzie zadziała mechanizm dziedziczennia. Wstawimy tag
 Na powyzszym ost przykladzie pokazujemy 2 sposoby zadziałania naszych stylów na dany element (w naszym przypadku tag strong) Niejawnie poprzez 1sza regule gdzie styl dla strong zostanie odziedziczony od p tagu w tej sekcji, ale w sposób jawny - poprzez wyrazny selektor.
 Styl dziedziczony to styl niejawny (implicit), który moge nadpisac w sposob jawny i wyrazny (explicit).
 
+Lekcja-13
+THE IMPORTANT DECLARATION
+Łamiemy zasady CSS - deklaracja !important to sposób na włączenie stylu bez wzgledu na wszystko, bez wzgledu na pozycje w kaskadzie, domyslne style czy specyficznosc selektora.
+Jest to deklaracja qniebezpieczna bo gdy bedziemy ja naduzywac - stracimy kontrole nad zarzadzaniem zasadami.
+W Cwiczeniu - przykład z 1sza regula dla p tagu i 2ga dla bardziej specyficznego p tagu w 2 sekcji z podanym id (silniejszy plus to ze nizej). Dodajemy deklaracje !important w 1szej zasadzie - co powoduje wygranie i wlaczenie tego wlasnie stylu dla wszystkich p tagow. Takiej reguly z ta daklaracja nic nie nadpisze.
+
+Stosujemy ja tylko w przypadku bardzo waznych styli i staramy sie nie uzywać jej za czesto.
+
 
