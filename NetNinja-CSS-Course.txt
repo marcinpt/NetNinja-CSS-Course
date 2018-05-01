@@ -185,4 +185,11 @@ W Cwiczeniu - przykład z 1sza regula dla p tagu i 2ga dla bardziej specyficzneg
 
 Stosujemy ja tylko w przypadku bardzo waznych styli i staramy sie nie uzywać jej za czesto.
 
+Lekcja-14
+TARGETING MULTIPLE ELEMENTS - WYBIERANIE WIELU ELEMENTOW W JEDEJ REGULE
+Scenariusz - mamy pokolorawć na ten sam kolor, rozmiar, grubosc i czionka ma  byc wszedzie taka sama.
+Najpierw robimy dla p - potem kopiujemy cala regule kilkukrotnie modyfikujac pozniej w nich selektory.
+UWAGA - zamiast tego - mozemy ustawic wszytsko jedna regula dla wielu selektorow. Wypisujemy je odzielajac jeden od 2giego przecinkiem. 
+Patrz przyklad syntax.css i contact.html.
+
 
