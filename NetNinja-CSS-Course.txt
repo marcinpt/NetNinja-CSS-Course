@@ -216,4 +216,12 @@ Wiec w odroznieniu do zadania zlekcji-15 regula:
 
 nada styl tylko bezposrenim dziciom p - a nie wszystkim potomkom jak wczesniej.
 
+Lekcja-17
+ADJACENT SELECTORS - SELEKTORY NASTEPNIKOW.
+Tworzymy nowy plik - articles.html, czyscimy syntax.css
+Zadaniem bedzie stworzenie takiego selektora, który nadaje styl tylko dla p znajdujacych sie pod naglowkami h2 sekcji o id all-articles.
+Z pomoca przychodzi nam selektor elementow nastepnych bezposrenio przyległych - adjacent selector
+Tworzy sie go za pomoca kombinatora +
+W naszym przypadku oprocz umieszczenia na 1szym mcu id sekcji na 2gim umieszczamy potomka h2 (a wiec po spacji) i dopiero potem + p
+
 
