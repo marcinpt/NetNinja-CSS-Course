@@ -1,21 +1,14 @@
-spann[class~="deck"]{
-    color: purple;
-}
+/* na przykladzie gdy elementem jest klasa (jakakolwiek):
 
-div[id]{
-    background: grey;
+.class:keyword{
+    ...
 }
+konkretne przykłady:*/
 
-/*
-a[title="Search engine"]{
+a:hover{
     color: red;
 }
-*/
-/*
-a[href$="pdf"]{
-    color: red;
-}
-*/
-a[href^="http"]{
-    color: pink;
+
+#main-content:hover{
+    background: red;
 }

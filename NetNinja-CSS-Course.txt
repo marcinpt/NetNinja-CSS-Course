@@ -248,4 +248,17 @@ Analogicznie istnieja jeszcze:
 $ (czyli $=) - wartosc konczy sie podanym cigiem np a[href$="pdf"]{...} Tu na przykladzie 2 dolozonych a linkow w htmlu.
 Kolejnym pattern-matching to ^ (czyli ^=) - wartosc zaczyna sie podanym ciagiem. W naszym przykladzie nadajemy styl (kolor pink) a linkom ktore sa linkami do zewnetrznych internetowych stron.
 
+Lakcja-19
+PSEUDO CLASSES - CZYLI SLOWA-KLUCZE W SELEKTORZE.
+Co to sa pseudo klasy?
+To slowa klucze umieszczane za selektorami (po :) ktore maja na elementach wykonac jakas okreslona funkcje.
+Pseudo Klasy dzielimy na 2 grupy: Dynamiczne i Strukturalne.
+
+Dynamiczne to te które wymuszaja okreslone zachowanie w wyniku jakiejs akcji uzytkownika - np zmiana koloru gdy nad nimi pojawi sie kursor lub gdy klikniemy klawisz na stronie to zamieni sie na klawisz-wcisniety...
+
+Strukturalne klasy pozwalają na nadawanie stylów w sposob bardziej zaawansowany ktory nie jest dostepny poprzez zwykly css - np w przypadku gdy chcemy nadac styl 5-emy elementowi li listy (zadan nie ma id ani class). Innym przypadkiem jest sytuacja gdzy element rodzic nie ma elementów dzieci - nie chcemy aby ostylowac dzieci.
+
+Sa tez takie Pseudo Klasy ktore nie naleza ani do Dynamic ani do Structure...
+
+Przyklady Składni - plik syntax.css
 
