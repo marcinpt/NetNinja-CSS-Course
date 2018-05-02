@@ -270,4 +270,9 @@ visited - zmiana gdy wczesniej bylo klikniecie
 active - zmiana gdy klikamy.
 Przykłady w syntax.css
 
+Lekcja-21
+PSEUDO KLASY - CD - PRZYKLADY STRUKTURALNYCH.
+Na przykładzie pliku articles.html gdzie tworzymy 2 bloki tym razem zamiast diva korzystamy z article.
+Article jest rodzicem ktory ma kilka potomkow. Budujemy selektory ktore wybiora nam 1sze dziecko i ostatnie dziecko tegoz rodzica (a wlasciwie rodzicow bo mamy takie 2 bloki). Nadawjemy im style jak w przykladzie syntax.css.
+
 
