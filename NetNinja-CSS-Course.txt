@@ -224,4 +224,28 @@ Z pomoca przychodzi nam selektor elementow nastepnych bezposrenio przyległych -
 Tworzy sie go za pomoca kombinatora +
 W naszym przypadku oprocz umieszczenia na 1szym mcu id sekcji na 2gim umieszczamy potomka h2 (a wiec po spacji) i dopiero potem + p
 
+Lekcja-18
+ATTRIBUTE SELECTORS - CZYLI SELEKTORY WYKOZYSTUJACE ATRYBUTY ELEMENTOW.
+W tej lekcji poznamy selektory które sa precyzowane za pomoca argumentow, argumentow z wartosciami ale takze argumentow zawierajace okreslone fragmenty wartości.
+W praktyce selektor zaraz po nazwie elementu ma "[]" w ktorych podajemy jego argument oraz tez pozostałe wspomniane wyzej kombinacje.
+Cwiczenie:
+
+Selektory zawierajace atrybut: np span[class]{...} - bierzemy elementy span ale tylko zawierajace atrybut class (bez wzgledu na wartosc, nazwe).
+
+Selektory zawierające atrybut z jego wartoscia - 1szy przyklad z uzyciem tagow span
+Kolejny przyklad z zastaosowaniem sekcji div. Tworzymy wczesniej dodatkowa sekcje ale bez atrybutow.
+
+Co jesli chcemy bardziej sprecyzować selektory? Istnieje mozliwosc wiekszego sprecyzowania argumentu - gdzie dodatkowo mozemy okreslic jaka wartosc ma miec - tak jak w html - el[arg="wart"]{...}.
+W cwiczeniu stosujemy to na 3cim a tagu.
+
+TERAZ COS CO SIE NAZYWA "PATTERN MATCHING"
+Jednym z nich jest np przypadek gdzie element posiada kilka klas - ich nazwy sa podane jako wartosci arg class oddzielne spaacją - np <a class="deck hall". Teraz wiec przyklad gdzie w html w 2gim spanie w arg class 2ga klase a w css w 1 regule wpisujemy tylko 1sza klase deck. 
+Teraz 1 regula na ten span nie zadziala bo dokladna wartosc ("deck") to nie ta sama wartosc co w arg class w html'u ("deck hall").
+Gdybysmy jednak chcieli zeby 1sza regula zadzialala na wszystkie spany to istnieje cos takiego jak "~" przed znakiem "=". Znaczenie tego to - gdy istnieje deck gdziekolwiek na lisce klas argumentu class.
+
+Czyli 1szt pattern match to ~ (~=)
+Analogicznie istnieja jeszcze:
+$ (czyli $=) - wartosc konczy sie podanym cigiem np a[href$="pdf"]{...} Tu na przykladzie 2 dolozonych a linkow w htmlu.
+Kolejnym pattern-matching to ^ (czyli ^=) - wartosc zaczyna sie podanym ciagiem. W naszym przykladzie nadajemy styl (kolor pink) a linkom ktore sa linkami do zewnetrznych internetowych stron.
+
 
