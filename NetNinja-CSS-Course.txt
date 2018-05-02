@@ -262,3 +262,12 @@ Sa tez takie Pseudo Klasy ktore nie naleza ani do Dynamic ani do Structure...
 
 Przyklady Składni - plik syntax.css
 
+Lekcja-20
+PSEUDO KLASY - CD - HOVER, VISITED AND ACTIVE
+Poznajemy 3 kolejne pseudo klasy - jedne z najpopularniejszych:
+hover - zmiana gdy myszka nad elementem
+visited - zmiana gdy wczesniej bylo klikniecie
+active - zmiana gdy klikamy.
+Przykłady w syntax.css
+
+
