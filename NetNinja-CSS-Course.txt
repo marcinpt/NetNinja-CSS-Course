@@ -304,4 +304,23 @@ kolejna kombinacja :nth-child(x) - gdzie x moze byc formułą, kombinacja z n np
 :nth-child(3n + 1) - co 4ty
 ...
 
+Lekcja-24
+PSEUDO KLASY - CD - NTH OF TYPE PSEUDO CLASSES
+Zmieniamy plik lists.html - mamy 4 bloki article, 2 nagłowki, przy jednym z nich a i hr pomiedzy; czyscimy syntax.css.
+Zadanie wprowadzajace i przypominajace z poprz lekcji - selektor bloku 1szego artykułu:
+
+article:nth-child(2){...} - 2gi child bo 1szy to naglowek h1 "Article".
+
+...BTW - UWAGA:  zauwaz ze nie podajemy - tak samo bylo we wczesniejszych lekcjach - podawac w 1selektorze rodzica.Gdybysmy mieli wiecej divow z dziecmi wewn to takze ich 2gie dziecko tez by ten selektor objal! W takiej sytuacji, jesli bysmy tego nie chcieli musielibysmy sprecyzowac o ktorego rodzica nam chodzi.
+
+Teraz mała sztuczka - uzyskujemy ten sam efekt ale prosciej - nie musimy liczyć od gory ktore to dziecko - teraz wystarczy nam wiedza ze jest to 1sze dziecko typu (article) i UWAGA - tutaj liczymy kolejnosc dzieci ale tylko w ramach tego samego typu!
+czyli ten sam efekt uzyskamy przez:
+
+article:nth-of-type(1){...} - bo jest to 1sze dziecko typu article.
+
+Teraz robimy kombinacje z argumentem tej pseudo klasy - odd
+Udowadniamy ze obejmujemy tylko typ article a nie uuwzgledniamy tych pomiedzy nimi.
+
+Teraz kombinacja z argumentem z formuła 2n+1 - efekt ten sam co odd
+
 
