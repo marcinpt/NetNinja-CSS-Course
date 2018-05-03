@@ -1,14 +1,24 @@
 /*
-*{
-    color: blue;
+h1{
+    font-size: 48px;
 }
-body{
-    color: red;
+
+h2{
+    font-size: 32px;
+}
+
+p{
+    font-size: 16px;
 }
 */
+article{
+    font-size: 16px;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    color: black;
+article h2{
+    font-size: 4em;
+}
+
+article p{
+    font-size: 50%;
 }

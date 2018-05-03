@@ -349,4 +349,26 @@ Jakie jest zasosowanie uniwersalnego selektora?
 Njczesciej stosowane przez niektórych programistow - tych którzy chcą zresetować ("wyczyścić") Domyślne Style Przeglądarki. Czasami jest to przydatne w celu uzyskania jednolitego wyglądu na kazdej przeglądarce.
 Przykład w naszm pliku css.
 
+Lekcja-27
+FONT SIZE
+W tej lekcji skupimy sie tym razem na deklaracji reguły, a dokładnie na wlasciwosci font-size
+Rozmiar czcionki mozemy okreslic na 2 sposoby:
+absolute - za pomoca pixeli (px)
+relative - za pomoca em'sów (em) lub procentow (%)
+Przechodzimy do plików roboczych:
+articles.html i wyczyszczony wczesniej syntax.css
+
+Zad1 - okreslamy rozmiar czcionki w sposob ABSOLUTE nadajac styl bezposrednio elementom: h1 h2 i p poprzez font-size z wartosciami odpowiednio 48px 32px 16px
+Sprawdzamy wyswietlanie - ok Sprawdzamy w trybie inspekcji F12 w Chromie ze nasze style nadpisuja DSP - ok
+
+Zad2 - usuwamay wszystko (zakomentujemy) i teraz omowimy sposob RELATIVE
+Na poczatku nadajmy styl poprzez DZIEDZICZENIE czyli selektor do elementu article poprze font-size z wart 16px
+Kolejne nadania stylow dla ementow to bedzie nadpisanie tych dziedziczonych - czyli juz bezposrednio ale tym razem w deklaracji uzyjemy:
+
+- dla selektora article h2{...} (wykozystujemy budowe sel dla potomka) - okreslamy wartosc font-size'a w em'ach. Oznacza on dokładnie ile razy wiecej wartosci dziedziczonej od rodzica.
+
+-dla p - analogicznie - ale teraz ile procent wart dziedziczonej od rodzica.
+
+Pomiar relative jest glownie wykorzystywany w projektowaniu responsywnym (projekty elastyczne, reagujące)
+
 
