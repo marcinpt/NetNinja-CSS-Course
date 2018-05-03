@@ -193,7 +193,7 @@ UWAGA - zamiast tego - mozemy ustawic wszytsko jedna regula dla wielu selektorow
 Patrz przyklad syntax.css i contact.html.
 
 Lekcja-15
-DESCENDANTS SELECTORS - SELEKTORY POTOMKOW
+DESCENDANTS SELECTORS & " "- SELEKTORY POTOMKOW
 
 W contact.html w 2giej sekcji tworzymy podsekcje (zagnizdzony div), syntax.css czyscimy.
 Mowimy ze wszystkie tagi w naszej 2 sekcji (dzisiaj na tej bedziemy pracować) to potomstwo tagu nadrzednego - rodzica (div) - podobnie w kolejnym zagniezdzeniu.
@@ -206,7 +206,7 @@ Teraz gdy zadaniem naszym byloby nadanie stylu p wewn podsekcji - to mozemy tak 
 - ze bedzie rozbudowany o id podsekcji, ale wtedy: UWAGA - nasz selektor bedzie wtedy bardzo specyficzny czyli bedzie nam go w razie potrzby trudno nadpisac. Dlatego staramy sie nie rozbudowywac selektorow w ten sposob - tworzymy tak specyficzny aby tylko styl zadziałał.
 
 Lekcja-16
-CHILD SELECTORS
+CHILD SELECTORS & COMBINARTOR ">"
 Jaka roznica pomiedzy child a decendant - niewielkla: potomkmowie to wszystkie elementy zagniezdzone wewn el nadrzednego, a dziecko to bezposredni potomek rodzica, tylko 1 poziom w glab
 Jak tworzymy selektor?
 Pomiedzy rodzicem a dzieckiem wstawiamy  tzw kombinator - >
@@ -217,7 +217,7 @@ Wiec w odroznieniu do zadania zlekcji-15 regula:
 nada styl tylko bezposrenim dziciom p - a nie wszystkim potomkom jak wczesniej.
 
 Lekcja-17
-ADJACENT SELECTORS - SELEKTORY NASTEPNIKOW.
+ADJACENT SELECTORS & COMBINAROR "+" - SELEKTORY NASTEPNIKOW.
 Tworzymy nowy plik - articles.html, czyscimy syntax.css
 Zadaniem bedzie stworzenie takiego selektora, który nadaje styl tylko dla p znajdujacych sie pod naglowkami h2 sekcji o id all-articles.
 Z pomoca przychodzi nam selektor elementow nastepnych bezposrenio przyległych - adjacent selector
@@ -286,5 +286,22 @@ Zadanie - chcemy jednak - nawet w tej nowej sytuacji - wybrac te same elementy c
 :last-of-type
 Przykład w syntax.css
 
+Lekcja-23
+PSEUDO KLASY - CD - NTH CHILD PSEUDO CLASSES.
+Tworzymy nowy plik lists.html gdzie wstawiamy lise elementow. 2 z nich maja byc wyroznione - 1szy i 7my:
+Poznajemy Pseudo klase ktora wybiera nam okreslony liczba element listy:
+
+:nth-child(x) - gdzie x to jej argument okreslający pozycje na liscie elementow.
+Przykład w syntax.css
+
+Poznajemy kolejne kombinacje z pseudo klasa :nth-child
+:nth-child(even) - wybiera parzyste elementy listy
+lub
+:nth-child(odd) - ...nieparzyste
+
+kolejna kombinacja :nth-child(x) - gdzie x moze byc formułą, kombinacja z n np:
+:nth-child(2n + 1) - co 3ci
+:nth-child(3n + 1) - co 4ty
+...
 
 

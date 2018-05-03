@@ -1,18 +1,18 @@
-/*
-article p:first-child{
+li:nth-child(1), li:nth-child(7){
     font-weight: bold;
 }
 
-article p:last-child{
-    color: red;
+/*
+li:nth-child(even), li:nth-child(7){
+    background: grey;
+}
+
+li:nth-child(odd), li:nth-child(7){
+    background: pink;
 }
 */
 
-article p:first-of-type{
-    font-weight: bold;
-}
-
-article p:last-of-type{
-    color: red;
+li:nth-child(3n + 1){
+    color:green;
 }
 
