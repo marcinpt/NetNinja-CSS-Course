@@ -275,4 +275,16 @@ PSEUDO KLASY - CD - PRZYKLADY STRUKTURALNYCH.
 Na przykładzie pliku articles.html gdzie tworzymy 2 bloki tym razem zamiast diva korzystamy z article.
 Article jest rodzicem ktory ma kilka potomkow. Budujemy selektory ktore wybiora nam 1sze dziecko i ostatnie dziecko tegoz rodzica (a wlasciwie rodzicow bo mamy takie 2 bloki). Nadawjemy im style jak w przykladzie syntax.css.
 
+Lekcja-22
+PSEUDO KLASY - CD - FIRST & LAST OF TYPE SELECTORS
+Podbna pseudo klasa do poprzedniej tylko tym razem chodzi -pierwsze i -ostatnie dziecko danego typu.
+Typem jest np tag p.
+Do pliku articles.html wprowadzamy dodatkowo do naszych bloków artukułów: tytuly h2 przed p'pami oraz linie hr na koncu za p'pami.
+Efekt - selektory z wczesniejszej lekcji (sa zostawione jako komentaz w syntax.css) skazuja teraz na inne elementy - wlasnie na te nowe bo teraz to one sa 1sze i ost dzieci article.
+Zadanie - chcemy jednak - nawet w tej nowej sytuacji - wybrac te same elementy co poprzednio. Z pomoca przychodzi nam kolejna pseudo klasa:
+:first-of-type
+:last-of-type
+Przykład w syntax.css
+
+
 
