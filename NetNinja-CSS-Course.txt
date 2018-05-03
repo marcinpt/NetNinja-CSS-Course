@@ -323,4 +323,15 @@ Udowadniamy ze obejmujemy tylko typ article a nie uuwzgledniamy tych pomiedzy ni
 
 Teraz kombinacja z argumentem z formuła 2n+1 - efekt ten sam co odd
 
+Lekcja-25
+COMBINING SELECTORS - SELEKTORY KOMBINOWANE
+Modyfikujemy nasz roboczy lists.html i czyscimy css
+Teraz mamy 2 bloki article gdzie 1szy ma klase i 2 bloki div gdzie tez 1szy z nich ma klase. Wszystko zagnizdzone w zewn div'ie.
+
+Zadanie - chcemy objac stylami elementy z dana klasa. Kombinacje tak tworzymy laczac (bez spacji!) klase z elementem - oczywiscie - od tylu czyli z prawa dolewa - element.klasa{...}
+
+Takim sposobem mozemy roznie ostylowac elementy z ta sama klasa.
+
+BTW - gdybysmy wstawili spacje pomiedzy klasa a elementem to zmienilibysmy zasieg (objete bylyby wszystkie potomki elementu element ktore zawieraja klase .klasa
+
 
