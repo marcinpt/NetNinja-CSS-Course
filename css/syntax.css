@@ -1,9 +1,16 @@
-/*font-weight*/
+/*text colour*/
 
-h1{
-    font-weight: normal;
+#header h1{
+    color: chocolate;
 }
-
-p{
-    font-weight: bolder;
+#header h2{
+    color: #567396;
 }
+#header{
+    background-color: antiquewhite;
+}
+/*
+#header{
+    background: antiquewhite;
+}
+*/

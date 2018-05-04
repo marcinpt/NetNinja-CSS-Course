@@ -413,4 +413,14 @@ capitalize - kapitalizacja czyli kazde slowo zaczyna sie z wielkiej litery
 Na koniec zastsoswanie z none:
 dzieci (lub inaczej bezposreni potomkowie) dziedzicza deklaracje od body ale dzieci p nadpisuja "wyczyszczającą" regułą z DBS.
 
+Lekcja-32
+TEXT COLOUR
+Istnieją 2 typy wlasciwosci od kolorowania:
+- text / foreground colour
+- background colour
+Różnica jest taka ze 1sza dotyczy tekstu - uzywamy właściwości color. Wartosci czyli kolory mozemy okreslac na bardzo wiele sposobow - w tej lekcji nie bedziemwy wszystkich poznawać -  mamy 1 przyklad z forma kodu szesnastkowego gdzie na poczatku podajemy #
+
+2gi dotczy podkladu tekstu i jest nadawany włąsciwością background-color i wartosci podobnie jak z 1szym.
+Jest jeszcze bardzo podobna wlasc - background - ktora dziala tak samo ale ma rozszezone mozliwosci np o umieszczenie grafiki.
+
 
