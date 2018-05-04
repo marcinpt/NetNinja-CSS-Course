@@ -377,4 +377,16 @@ Krój czcionki okreslamy w deklaracji za pomoca właściwości font-family
 Jesli okreslimy jej wartość jako np arial a w systemie jej nie bedzie to przegladarka uzyje Czionki z DSP (np Time News Roman). Gdy nie chcemy tego to budujemy tzw stack fontow - czyli jesli nie ma 1szego to wez 2gi w kolejnosci, jesli nie ma znowu to wez 3ci, jesli nie ma zadnego to DSP.
 Patrz przyklad w syntax.css i articles.html.
 
+Lekcja-29
+TEXT DECORATION
+Co to jest ttext-decoration - to własciwosc ktora nadaje np podkreslenie da linków - domyslnie przez DBS (en: Default Browser Style, pl: DSP) czyli underline.
+
+jakie jeszcze mamy "tekst-dekoracje"
+Experyment w dzidziczeniem - nadajemy styl tekstu dla rodzicow a-linkow overline (linia nad tekstem), a dla a nadajemy dla wlasciwosci txt-decoration wartosc INHERIT - to spowoduje wymuszenie dziedziczenia od rodzica - bo normalnie (jak we wczesniejszych lekcja bylo omawiane) elemnty a nie odziedziczylyby stylu od rodzicow tylko przez DBS.
+
+Co jeszcze - przyklady
+line-through - przekreslenie teksty
+
+Czyli tak wlasciwie mamy tylk 3 dekoracje tekstu bo pozostale to none i inherit.
+
 
