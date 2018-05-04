@@ -1,4 +1,9 @@
-article h2, article p {
-    font-family: arial, helvetica, sans-serif;
+/*font-weight*/
+
+h1{
+    font-weight: normal;
 }
 
+p{
+    font-weight: bolder;
+}

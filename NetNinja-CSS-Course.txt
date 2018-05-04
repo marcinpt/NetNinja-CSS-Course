@@ -389,4 +389,20 @@ line-through - przekreslenie teksty
 
 Czyli tak wlasciwie mamy tylk 3 dekoracje tekstu bo pozostale to none i inherit.
 
+Lekcja-30
+FONT WEIGHT - czyli grubość czcionki
+Pracujemy na syntax.css i index.html
+Nadpisujemy styl z DBS dla h1 - poprzez font-weight nadajac mu warosc normal. Sprawdzamy - tytul stracil masywnosc nie jest juz pogrubiony.
+Sprawdzamy pozostałe na p tagu:
+bolder - pogrubiony podobny do bold
+normal - normalny - jak domyslne
+lighter - oznacza cienki tekst - ALE! - nie zmienilo sie nic! Dlaczego?
+Dlatego ze rodzina czcionek DBS to Times New Roman, która nie ma opcji lighter. Wniosek: Nie wszystkie czcionki maja opcje bold czy lighter czy inne...
+W zwiazku z powyzszym - jedna z czcionek ktora ma wszystkie 3 opcje to np Yu Gothic. Testujemy:
+stylujemy p przez font-weight jako normal i font-family jako "Yu Gothic" (UWAGA - nazwe czcionek skladajacej sie z kilku wyrazow ze spacja w sr musimy objac "...").
+Nastepnie probujemy jeszcze raz lighter ale z ta czcionka - jest efekt - ciensza teraz.
+
+Teraz sprawdzamy wartosci dla wlasciwosci text-weight liczbowe: mamy od 100-900. Ogolnie: 100-300 light, 400-600 normal, 700-900 bold.
+UWAGA - tu tak samo jak wczesniej - nie wszystkie czcionki maja (wspieraja) wszystkie wartosci.
+
 
