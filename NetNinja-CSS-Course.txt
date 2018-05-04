@@ -411,7 +411,7 @@ Pliki robocze index.html i syntax.css
 Poznajemy zastosowanie text-transform:
 capitalize - kapitalizacja czyli kazde slowo zaczyna sie z wielkiej litery
 Na koniec zastsoswanie z none:
-dzieci (lub inaczej bezposreni potomkowie) dziedzicza deklaracje od body ale dzieci p nadpisuja "wyczyszczającą" regułą z DBS.
+dzieci (lub inaczej bezposreni potomkowie) dziedzicza deklaracje od body ale dzieci p nadpisuja "wyczyszczającą" regułą.
 
 Lekcja-32
 TEXT COLOUR
@@ -422,5 +422,25 @@ Różnica jest taka ze 1sza dotyczy tekstu - uzywamy właściwości color. Warto
 
 2gi dotczy podkladu tekstu i jest nadawany włąsciwością background-color i wartosci podobnie jak z 1szym.
 Jest jeszcze bardzo podobna wlasc - background - ktora dziala tak samo ale ma rozszezone mozliwosci np o umieszczenie grafiki.
+
+Lekcja-33
+STYLING LINKS
+Stylizujemy linki
+Jak wyzej pliki index.html i syntax.css
+W index.html wstawiamy 3x link
+Sprawdzamy w przegld - linki wygladaja standardowo - style z DBS
+
+Teraz my - uznajemy ze styl z DBS nam nie pasuje wiec tworzymy swoje
+w css robimy regule dla linkow gdzie
+nadajemy kolor txx - colour
+ustwaiamy text-decoration na none - czyli czyscimy underline
+font-weight na bold
+
+Teraz dla urozmicenia korzystamy z pseudo klasy
+ustawiamy zachowanie gdy hover myszka
+zmiana koloru txt
+underline
+background-color na jakis kolor
+jest cool :)
 
 

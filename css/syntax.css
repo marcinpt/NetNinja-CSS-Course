@@ -1,16 +1,11 @@
-/*text colour*/
+a{
+    color: crimson;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: darkmagenta;
+    text-decoration: underline;
+    background-color: aquamarine;
+}
 
-#header h1{
-    color: chocolate;
-}
-#header h2{
-    color: #567396;
-}
-#header{
-    background-color: antiquewhite;
-}
-/*
-#header{
-    background: antiquewhite;
-}
-*/
