@@ -371,4 +371,10 @@ Kolejne nadania stylow dla ementow to bedzie nadpisanie tych dziedziczonych - cz
 
 Pomiar relative jest glownie wykorzystywany w projektowaniu responsywnym (projekty elastyczne, reagujące)
 
+Lekcja-28
+FONT FAMILY
+Krój czcionki okreslamy w deklaracji za pomoca właściwości font-family
+Jesli okreslimy jej wartość jako np arial a w systemie jej nie bedzie to przegladarka uzyje Czionki z DSP (np Time News Roman). Gdy nie chcemy tego to budujemy tzw stack fontow - czyli jesli nie ma 1szego to wez 2gi w kolejnosci, jesli nie ma znowu to wez 3ci, jesli nie ma zadnego to DSP.
+Patrz przyklad w syntax.css i articles.html.
+
 
