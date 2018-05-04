@@ -405,4 +405,12 @@ Nastepnie probujemy jeszcze raz lighter ale z ta czcionka - jest efekt - ciensza
 Teraz sprawdzamy wartosci dla wlasciwosci text-weight liczbowe: mamy od 100-900. Ogolnie: 100-300 light, 400-600 normal, 700-900 bold.
 UWAGA - tu tak samo jak wczesniej - nie wszystkie czcionki maja (wspieraja) wszystkie wartosci.
 
+Lekcja-31
+TEXT TRANSFORM - OPERACJE NA TEKSCIE
+Pliki robocze index.html i syntax.css
+Poznajemy zastosowanie text-transform:
+capitalize - kapitalizacja czyli kazde slowo zaczyna sie z wielkiej litery
+Na koniec zastsoswanie z none:
+dzieci (lub inaczej bezposreni potomkowie) dziedzicza deklaracje od body ale dzieci p nadpisuja "wyczyszczającą" regułą z DBS.
+
 
