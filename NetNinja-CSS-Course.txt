@@ -530,4 +530,10 @@ ustawiamy szerokosc el na 50%
 Teraz aby bylo 100 - wiemy ze w margin lewy i prawy maja miec po 25%
 Usuwamy pading bo bedzie przeszkadzal w uzyskaniu efektu. Sprawdzamy - jest OK
 
+Lekcja-38
+PADDING
+Pliki robocze jak poprzednio. W syntax ustwaiamy style dla el z klasa box: margin, padding i border.
+W przypadku padding wartosci okreslamy takze na rozne sposoby - analogicznie jak przy margin.
+Tez mozemy korzystać z wartosci procentowych.
+
 
