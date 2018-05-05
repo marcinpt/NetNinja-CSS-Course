@@ -471,7 +471,7 @@ Jesli chodzi o em'sy - to analogicznie jest w przypadku innych właściwości:
 word-spacing
 line-height (tu tylko uwazamy zeby nie bylo ponizej 1 bo linie beda zachodzic na siebie - wczesniejsza uwaga)
 
-Lekcja-36
+Lekcja-35
 PARAGRAPH SPACING
 Pliki robocze - index.html ten sam syntax czyscimy
 w naszym css okreslamy dla p rozmiar tekstu na 14px i wysokosc lini na 2em (jak wczesniejsza lekcja wyjasnia - znaczy ze jest wzieta wartosc z rozmiaru x2 czyli 28px). Z tad wynika ze fonty mja 14px wiec 14 bedzie na odleglosci - w praktyce wyglada to tak ze 7px bedzie na gore i 7 na dół.
@@ -482,5 +482,29 @@ W ten sam sosob mozemy okreslic przestrzen poprzez
 margin-top -left -right.
 Nadajac margines dla dołu paragrafu mowimy przegladarce zeby zanim wyswietli kolejny par ma wstawic 32px przestrzeni.
 Sprawdzamy w przegladarce - jest teraz 32px na dole kazdego paragrafu. Wlaczmy tryb inspekcji przegladarki (Chrome F12) i widzimy ze gorna przestrzen paragrafów jest o wiele mniejsza - to dlatego ze DBS je okrela. My nadalismy wartość tylko dla dolnego marginesu.
+
+Lekcja-36
+THE BOX MODEL
+Co sie kryje pod pojęciem modelu pudełkowego (Box Model). Jest to sposób przentowania sie kazdego elementu na stronie w zdefiniowanej przestrzeni. Kazdy element html wg modelu pudełkowego posiada:
+szerokosc i wysokosc (width, height)
+padding - przestrzen wewn okalajaca zwymiaowany wczesniej element
+border - ramka o okreslonej grubosci (takze stylu jesli chcemy)
+margin - margines jaki dzieli border od sasiadujacego elementu.
+
+Pliki robocze
+index.html - zmieniamy; wyczyszczony syntax.css
+W index tworzymy 2 sekcje z klasa box - obje wraz z nagowkiem sa w okalajacym divie z id main-content.
+w css stylizujemy objekty z klasa box - wiec .box{...} Wewnatrz deklaracji wstawiamy wszystkie wymienione wczesniej właściwości z koqnkretnymi wartościami - patrz przyklad.
+
+Sprawdzamy w przegladarce - z wykorzystaniem developerskiego narzedzia do inspekcji kodu - F12.
+Widzimy wszystkie wspomniane elementy opisujące wg modelu pudełkowego.
+
+W nazym przykładzie widzimy ze prawy margines jest rozciagniety do konca w prawo - dlatego ze mamy do czynienia z poziomem elementow blokowych - a te wypelniaja cala przestrzen "wiersza" i jesli po prawej stronie nic nie ma przegladarka automatycznie dodaje margines wypełqniając calą przestrzen.
+
+Uwaga - mamy tu 2 elementy (divy z klasami box) a przestrzen pomiedzy nimi jest tylko 30 podczas gdy kazdy z nich ma 30px margin - powinno byc 60... To jest z powodu rzeczy ktora omowimy w kolejnych lekcja a nazywa sie vertical margin collapse. Krótko - kiedy sa 2 elementy z poziomymi marginesami jeden pod drugim to brany jest margines gornego elementu.
+
+Teraz - patrzymy co sie stanie gdy usuniemy wymiary kontentu, elementu. Sprawdzamy. Dlaczego szerokosc elementu sie wydluzyla - bo gdy nie okreslimy jego szerokosci - w pudelkowym modelu element zajmuje soba cala przestrzen dla siebie (wiersz). Co do wysokosci to przyjmuje domyslna wlasciwosc dla danego kontentu - np p tagu. Czyli szerokosc CALOSCI wypelnia 100% dostepnej szerokosci.
+
+Teraz Co jesli okreslimy szerokosc KONTENTU (w modelu pudelkowym jako element) na 100% Sprawdzamy calosc "wyjdzie" nam poza dostepny obszar! Dlaczego - bo wartosc 100% dotyczy elementu, kontentu a nie calosci - do tego 100% dostepnej szerokosci doliczone jest padding + border + margin!.
 
 
