@@ -536,4 +536,15 @@ Pliki robocze jak poprzednio. W syntax ustwaiamy style dla el z klasa box: margi
 W przypadku padding wartosci okreslamy takze na rozne sposoby - analogicznie jak przy margin.
 Tez mozemy korzystać z wartosci procentowych.
 
+Lekcja-39
+MARGIN & PADDING - LONG-HAND VERSIONS
+Do tej pory uzywalismy "krotkiej wersji - margin czy padding. stnieją dluzsze ktore sa dla konkretnych stron:
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+Analogicznie dla padding
+Cel: np gdy mamy juz isniejaca regule (np w inej klasie dla tego samego elementu) gdzie wszystkie strony sa ustawione - a chcemy nadpisac tylko jedna strone - patrz przyklad w syntax.css
+
 
