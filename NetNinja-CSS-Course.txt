@@ -507,4 +507,27 @@ Teraz - patrzymy co sie stanie gdy usuniemy wymiary kontentu, elementu. Sprawdza
 
 Teraz Co jesli okreslimy szerokosc KONTENTU (w modelu pudelkowym jako element) na 100% Sprawdzamy calosc "wyjdzie" nam poza dostepny obszar! Dlaczego - bo wartosc 100% dotyczy elementu, kontentu a nie calosci - do tego 100% dostepnej szerokosci doliczone jest padding + border + margin!.
 
+Lekcja-37
+Różne sposoby oreslania wlasciwosci margin:
+
+1dna wartosc - znaczy dookoła tak samo
+4ry wartosci - osobno dla kazdego boku (zgodnie z ruchem wsk zegara)
+2wie wartosci - gora-dol i lewy-prawy
+3y wrtosci gora prawy dol - UWAGA lewy bedzie taki sam jak prawy
+
+ZAŁAMYWANIE MARGINESÓW - vertical margin collapse
+Polega na redukcji marginesow pomiedzy dwoma sasiadujacymi elementami ktore je maja.
+Jesli sa takie same to brany jest z gornego el (bedzie polowa sumy)
+Jesli sa rozne to brany jest wiekszy
+Praca w oknie narzedzia chrome'a do insp kodu. Tam mozemy na potrzeby testow zienic wartosci margin.
+Np na 30 15 15 15 - sprawdzamy ze teraz pomiedzy oba elementami jest 30 bo marginesy na styku to 15 (dolny gornego el) i 30 (gorny dolnego el) - brany jest 30.
+
+Okreslamy width elementu na 300px. Teraz chcemy umiescic je na srodku czyli okreslic taki margines dla lewegi i prawego boku zeby el byl na srodku. Przypadek taki gdy nie znamy wielkosci kontenera w ktorym elementy sie znajduja. W tej sytuacji mozemy uzyc takiej wartosci da margin:
+margin: 30px auto; - ktoremowi ze gora-dol po 30px a lewy-prawy taki aby nasz box byl dokladnie po srodku.
+
+Podobny efekt do powyzszego mozemy oiagnac wkorzystujac wartosci procentowe:
+ustawiamy szerokosc el na 50%
+Teraz aby bylo 100 - wiemy ze w margin lewy i prawy maja miec po 25%
+Usuwamy pading bo bedzie przeszkadzal w uzyskaniu efektu. Sprawdzamy - jest OK
+
 

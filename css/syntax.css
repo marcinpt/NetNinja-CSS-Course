@@ -1,12 +1,22 @@
-/*The Box Model*/
+/*Margin*/
 
 .box{
-    margin: 30px;
-    padding: 30px;
-    border: 1px solid #000;
 /*
-    width: 400px;
-    height: 200px; 
-*/ /*2gie cwiczenie - usuwamy wymiary el.*/
+    margin: 30px;
+    margin: 30px 20px 15px 5px;
+    margin: 30px 15px;
+    margin: 30px 15px 20px;
+*/
+    
+/*
+    padding: 30px;
+*/
+    border: 1px solid #000;
+    
+/*
+    margin: 30px auto;
+*/
+    margin: 30px 25%;
+    width: 50%;
 }
 
