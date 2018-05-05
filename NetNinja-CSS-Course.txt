@@ -443,4 +443,32 @@ underline
 background-color na jakis kolor
 jest cool :)
 
+Lekcja-34
+LETTER SPACING $ LINE HEIGHT
+Co to sa za pojęcia
+L e t t e r - letter spacing czyli odleglosci miedzy literami (jest jeszcze cos takiego jak word spacing)
+line hight to odleglosci pomiedzy liniami tekstu.
+
+Przechodzimy do plików roboczych:
+Przygotowujemy index.html i czyscimy syntax.css
+W index robimy wprowadzamy zmiany - Mamy 3 duze paragrafy w divie razem z h1 na czele bloku. W naglowku dodajemy style wbudowane gdzie okeslamy style - wylacznie w celach estetycznych...
+
+Zaczynamy w syntax.css:
+sylizujemy paragrafy p - rozmiar txt i wlasnie letter-spacing. Zauwazamay ze w podpowiedzi mamy tylko normal i inherit ale mozemy sami okreslic wartosc - np w px. Patrz przyklad.
+Probujemy tez word-spacing.
+
+Teraz line-height - odleglosci pionowe miedzy liniami. Dawjemy 24px. Sprawdzamay - co jest - nie wyglada na 24px! - wyglada raczej na 12 - Dlaczego? Bo line-height oresla WYSOKOŚĆ LINII a nie odleglosci pomiedzy nimi (gap)! Jesli damy 0 to kazda nowa linia bedzie sie zaczynac od tego samego miejsca - linie beda sie pokrywac. 
+I jeszcze mala uwaga - poniewaz fonty maja 12px to wysokosc lini automatycznie tez przybierze ta sama wartosc.
+WIEC REANSUMUJĄC - jesli dalismy 24px to trzeba wziasc pod uwage 12px wysokosci fontow i tym samym 12px bedzie na przestrzen pomiedzy nimi.
+
+Powiedzielismy wczesniej ze do okreslenia wartosci mozemy uzyc em'sy:
+Uzylismy je w deklaracji
+letter-spacing
+Wspomnielismy ze wlasciwosci z em'sami biora wartosc dziedziczona i jesli "wyzej" mamy 2em to bedzie 2x ta wartosc. To nie jest ten przypadek bo dzidziczenie odbywa sie od rodzica a rodzicem dla p jest body gdzie nie mamy zadnego okreslenia letter-spacing. Nie mniej jednak, jesli - tak jak u nas - nawet w tej samej regule jest wczesniej okreslenie rozmiaru tekstu w px to wlasciwosc z em'sami "weżmie" TĄ wartosc do przeliczenia. 
+Patrz przykład: w tej samej regule dot p mamy fonty na 12px a ponizej mamy letter-spacing jako 0.2em - wynikiem bedzie 2.4px.
+
+Jesli chodzi o em'sy - to analogicznie jest w przypadku innych właściwości:
+word-spacing
+line-height (tu tylko uwazamy zeby nie bylo ponizej 1 bo linie beda zachodzic na siebie - wczesniejsza uwaga)
+
 
