@@ -471,4 +471,16 @@ Jesli chodzi o em'sy - to analogicznie jest w przypadku innych właściwości:
 word-spacing
 line-height (tu tylko uwazamy zeby nie bylo ponizej 1 bo linie beda zachodzic na siebie - wczesniejsza uwaga)
 
+Lekcja-36
+PARAGRAPH SPACING
+Pliki robocze - index.html ten sam syntax czyscimy
+w naszym css okreslamy dla p rozmiar tekstu na 14px i wysokosc lini na 2em (jak wczesniejsza lekcja wyjasnia - znaczy ze jest wzieta wartosc z rozmiaru x2 czyli 28px). Z tad wynika ze fonty mja 14px wiec 14 bedzie na odleglosci - w praktyce wyglada to tak ze 7px bedzie na gore i 7 na dół.
+Teraz - wracajac do paragrafów - aby okreslic przestrzen pomiedzy nimi posluzymy sie wlasciwoscią:
+margin-bottom
+Nadajemy mu wartosc 32px
+W ten sam sosob mozemy okreslic przestrzen poprzez
+margin-top -left -right.
+Nadajac margines dla dołu paragrafu mowimy przegladarce zeby zanim wyswietli kolejny par ma wstawic 32px przestrzeni.
+Sprawdzamy w przegladarce - jest teraz 32px na dole kazdego paragrafu. Wlaczmy tryb inspekcji przegladarki (Chrome F12) i widzimy ze gorna przestrzen paragrafów jest o wiele mniejsza - to dlatego ze DBS je okrela. My nadalismy wartość tylko dla dolnego marginesu.
+
 

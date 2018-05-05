@@ -1,21 +1,7 @@
-/*Letter spacing*/
+/*Paragraph Spacing*/
 
 p{
-    font-size: 12px;
-/*
-    letter-spacing: 2px;
-*/
-/*
-    word-spacing: 2px;
-*/
-/*
-    line-height: 24px;
-*/
-/*
-    letter-spacing: 0.2em;
-*/
-/*
-    word-spacing: 0.2em;
-*/
-    line-height: 1.5em;
+    font-size: 14px;
+    line-height: 2em;
+    margin-bottom: 32px;
 }
