@@ -574,3 +574,7 @@ display: block;
 ALE my chcemy zeby bylo jak IE ale tez jak BLE Jak to zrobimy?
 display: inline-bolck;
 
+Na koniec przyklad zastsowania - linki
+Wyswietlanie inline w zaleznosci od radzaju przegladarki - mozemy sprawdzic na caniuse.com
+
+

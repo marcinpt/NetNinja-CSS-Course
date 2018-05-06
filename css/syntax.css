@@ -1,22 +1,13 @@
-/*Block-Level Elements*/
+/*Block-Level Elements  */
+/*Przyklad zastosowania */
 
-/*wg kursu padd i marg jest po 10px - wtedy linie ramek sa niewidoczne. zmienilem na 20*/
-.block{
+a{
     padding: 20px;
     margin: 20px;
-    border: 1px solid #000;
-}
-
-.inline{
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #000;
-    
-/*dopisuqjemy zeby jak BLE*/    
-/*
-    display: block;
-*/
-    
-/*dopisujemy teraz zeby byla jak IE i BLE*/    
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    color: #000;
+    text-decoration: none;
+/*teraz wyswietlamy - nachodza - wiec dopisujemy:*/    
     display: inline-block;
 }
