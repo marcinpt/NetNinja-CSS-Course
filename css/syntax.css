@@ -1,47 +1,22 @@
-/*Borders*/
+/*Block-Level Elements*/
 
-.box{
+/*wg kursu padd i marg jest po 10px - wtedy linie ramek sa niewidoczne. zmienilem na 20*/
+.block{
     padding: 20px;
     margin: 20px;
-    float: left;
-   
-/*pokazujemy wersje long - niezbyt wydajny sposob*/
+    border: 1px solid #000;
+}
+
+.inline{
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #000;
+    
+/*dopisuqjemy zeby jak BLE*/    
 /*
-    border-top-width: 10px;
-    border-top-style: solid;
-    border-top-color: blue;
+    display: block;
 */
-/*to samo co wyzej ale krocej*/
-/*
-    border-top: 10px solid blue;
-*/
-/*teraz jak wyzej ale dla calego border*/
-/*
-    border: 10px solid blue;
-*/
-}
-.dashed{
-    border: 1px blue dashed;
-}
-.dotted{
-    border: 1px blue dotted;
-}
-/*poprawiamy width na wiecej (niektore duzo wiecej) w celu poprawnej stylizacji:*/
-.double{
-    border: 4px blue double;
-}
-.groove{
-    border: 14px blue groove;
-}
-.inset{
-    border: 14px blue inset;
-}
-.outset{
-    border: 14px blue outset;
-}
-.ridge{
-    border: 14px blue ridge;
-}
-.solid{
-    border: 1px blue solid;
+    
+/*dopisujemy teraz zeby byla jak IE i BLE*/    
+    display: inline-block;
 }

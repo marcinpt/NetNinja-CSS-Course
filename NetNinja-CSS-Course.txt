@@ -558,4 +558,19 @@ long-heand i short-heand.
 
 Stylizujemy wszystkie dodatkowe klasy korespondujące do ich stylu. Sprawdzamy - Nie wszystkie przyjely styl jaki chcielismy. Dlaczego? - bo szerokosc linii jest za mala - zwiekszamy by poprawic to.
 
+Lekcja-41
+BLOCK LEVEL ELEMENTS
+Robimy w index po 3x divy z klasami block i 3 spany z klasami inline
+w scc nadajemy klasom padding marging i border (w kursie jest po 10 ale wtedy w niektorych przeladarkach linie sa niewidocne - ustawilem na 20px)
+Wyswietlamy:
+Widzimy ze divy ustawione sa jeden-pod-drugim - to dlatego ze sa one Block-Level Elementami. Wypelniaja soba cala przestrzen wiersza (row). Tak działaja BLE - bloki zajmuja caly wiersz. Istnieje wiele BLE.
+DIV jest jednym z nich. Na W3 jest lista tagow ktore sa BLE.
+
+Co do span'ów - to juz nie BLE tylo Inline Elements (IE) tutaj tez obowiazuje model pudełkowy (TheBlockModel) ale IE maja juz taka wlasciwosc ze nie zajmuja calego wiersza tylko ustawiaja jeden-za-drugim. Co wazne marginy poziome (top-bottom) nie sa kontrolowane dla tego jesli elementow typu IE jest wiecej niz zmiesci sie w wierszu to el z dolnego wiersza beda nachodzic na el w gornym wierszu!
+
+Co mozemy zrobic? - mozemy wymusic zeby IE wyswietlaly sie tak samo jak BLE Jak? Tak:
+wlasciwosc:
+display: block;
+ALE my chcemy zeby bylo jak IE ale tez jak BLE Jak to zrobimy?
+display: inline-bolck;
 
