@@ -613,4 +613,17 @@ Potem z dwiema wartosciami - tu uwaga troche inaczej jak z margin czy padding - 
 Na koniec robimy takie zaokraglenia aby powstal okrag.
 W ost klasie czyscimy deklaracje i ustawiamy statycznie el 100x100 potem -radius na 50px.
 
+Lekcja-45
+BACKGROUNDS
+Pliki robocze index i syntax
+zmieniamy troche index - zostawiamy jeden div z klasa static-width, czyscimy syntax- i ustawiamy style dla klasy .static-width. - width i height.
+Probujemy rozne wlasciwosci zwiazane z tlem: 
+
+bacground-<\/>
+	-color
+	-image url(x) x - adres do obrazka
+	-repeat (wiele mozliwosc jak bez powtorzen, round - rowno przy bokach zmiejszajac rozm, ...
+	-position (mamy wiele mozliwosci jak center, [2-wart left/center/right top/center/bottom], [2-wart od-lewej od-gory] w px lub %
+	-size (px)
+
 

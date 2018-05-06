@@ -1,34 +1,21 @@
-/*Rounded corners*/
+/*Backgrounds*/
 
-/*najpierw styl wspolny dla wszystkich divow wewn div'a z id main-contenet*/
-#main-content div{
-    background-color: #ccc;
-    margin: 0 0 20px 0;
-}
-
-/*teraz style oddzielnie dla 2 1szych divow*/
 .static-width{
-    width: 300px;
-    height: 100px;
-/*wprowadzamy zaokraglenie rogów*/    
-    border-radius: 30px;
-}
+    width: 400px;
+    height: 400px;
+/*okreslamy kolor tła - ten kolor to ciemny-szary*/    
+    background-color: #606060;
+    
+/*tlo jako obrazek*/
+    background-image: url(http://cdn.networkice.com/gen/ikony-gadu-gadu-100x100.png);
+    
+/*bez powtorzen*/
+    background-repeat: no-repeat;
+    
+/*pozycja obrazka na srodku, ale mozemy:
+okreslic dwoma parametrami daokladnie jaka chcemy pozycje - poprzez 2 wartosci - wspolrzedne: [% lub px od lewej] [% lub px od gory] lub kombin 2-wart [left/right top/bottom]*/
+    background-position: center;
 
-.persentage-width{
-    width: 70%;
-    height: 50px;
-/*zaokraglenie - kazdy rog oddzielnie*/    
-/*
-    border-radius: 5px 10px 20px 40px;
-*/
-/*teraz z dwiema wartosciami - tu inaczej jak w margin bo teraz takie same po przeciwleglych rogach*/        
-    border-radius: 10px 20px;
-}
-
-/*teraz style wspolne dla 2 ost divow*/
-.inline-block{
-/*robimy kółko*/    
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+/*rozmiar obrazka*/
+    background-size: 300px;
 }
