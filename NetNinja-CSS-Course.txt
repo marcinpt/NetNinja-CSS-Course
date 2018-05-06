@@ -547,4 +547,15 @@ margin-left
 Analogicznie dla padding
 Cel: np gdy mamy juz isniejaca regule (np w inej klasie dla tego samego elementu) gdzie wszystkie strony sa ustawione - a chcemy nadpisac tylko jedna strone - patrz przyklad w syntax.css
 
+Lekcja-40
+BORDERS
+Pliki robocze: index.html - zmieniamy: w sekcji div z main-content tworzymy 8 podsekcji z podwojnymi klasami: kazda ma box'a a drugą odpowiednio dla pozniejszego ostylizowania rodzaju linii ramki (border).
+W syntax najpierw podstawowa stylizacja dla klasy .box (padding margin float) pozniej kazda z 8 klas dodatkowych ale narazie bez deklaracji.
+
+Pare słów o border - to jak wiemy - jeden z elementow modelu pudełkowego (The Box Medel) - jest jakby prymitywnym elementem na zewn padding ale przed margin. Właściwość border posiada 3 cechy-wartosci:
+width (szerokosc linii) i rodzaj (style) i kolor (colour). Własciwosci dla border'a maja rozna postać:
+long-heand i short-heand.
+
+Stylizujemy wszystkie dodatkowe klasy korespondujące do ich stylu. Sprawdzamy - Nie wszystkie przyjely styl jaki chcielismy. Dlaczego? - bo szerokosc linii jest za mala - zwiekszamy by poprawic to.
+
 

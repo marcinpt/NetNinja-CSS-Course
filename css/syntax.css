@@ -1,16 +1,47 @@
-/*Padding*/
+/*Borders*/
 
 .box{
-    margin: 30px;
+    padding: 20px;
+    margin: 20px;
+    float: left;
+   
+/*pokazujemy wersje long - niezbyt wydajny sposob*/
 /*
-    padding: 30px;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-top-color: blue;
 */
-    border: 1px solid #000;
+/*to samo co wyzej ale krocej*/
 /*
-    padding: 30px 20px 10px 5px;
+    border-top: 10px solid blue;
 */
+/*teraz jak wyzej ale dla calego border*/
 /*
-    padding: 30px 20px 5px;
+    border: 10px solid blue;
 */
-    padding: 30px 25%;
+}
+.dashed{
+    border: 1px blue dashed;
+}
+.dotted{
+    border: 1px blue dotted;
+}
+/*poprawiamy width na wiecej (niektore duzo wiecej) w celu poprawnej stylizacji:*/
+.double{
+    border: 4px blue double;
+}
+.groove{
+    border: 14px blue groove;
+}
+.inset{
+    border: 14px blue inset;
+}
+.outset{
+    border: 14px blue outset;
+}
+.ridge{
+    border: 14px blue ridge;
+}
+.solid{
+    border: 1px blue solid;
 }
