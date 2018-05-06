@@ -1,4 +1,4 @@
-/*Width & Height*/
+/*Rounded corners*/
 
 /*najpierw styl wspolny dla wszystkich divow wewn div'a z id main-contenet*/
 #main-content div{
@@ -10,16 +10,25 @@
 .static-width{
     width: 300px;
     height: 100px;
+/*wprowadzamy zaokraglenie rogów*/    
+    border-radius: 30px;
 }
 
 .persentage-width{
     width: 70%;
     height: 50px;
-        
+/*zaokraglenie - kazdy rog oddzielnie*/    
+/*
+    border-radius: 5px 10px 20px 40px;
+*/
+/*teraz z dwiema wartosciami - tu inaczej jak w margin bo teraz takie same po przeciwleglych rogach*/        
+    border-radius: 10px 20px;
 }
 
 /*teraz style wspolne dla 2 ost divow*/
 .inline-block{
-    width: 40%;
-    display: inline-block;
+/*robimy kółko*/    
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
 }

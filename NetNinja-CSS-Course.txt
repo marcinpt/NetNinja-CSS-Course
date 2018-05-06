@@ -599,4 +599,18 @@ jesli mocna zwezimy okno to 1szy el wyjdzie poza obszar rodzica (div z id main-c
 
 3ci i 4ty element ustawia sie jeden-obok-drugiego i tez beda sie kurczyc jak w 2gim el.
 
+Lekcja-43
+ROUNDED CORNERS - zaokrąglanie rogów.
+PLiki robocze - dokladnie te same co na poprzedniej lekcji - nie czyscimy syntax'a
+Wprowadzamy zaokraglanie.
+Mozemy ustawic oddzielnie dla kazdego - analogicznie jak w przypadku marginesow - zgodnie z ruchem wsk zegara.
+Zaczyanamy od ustawienia dla wszystkich. Wlasciwosc:
+border-radius:
+wartosc ustwiamy na 10px potem sprawdzamy 30px
+Potem wprawadzamy sposob gdzie jontrolujemy kazdy rog - ustawiamy w 2giej klasie w css.
+Potem z dwiema wartosciami - tu uwaga troche inaczej jak z margin czy padding - X - patrz przyklad.
+
+Na koniec robimy takie zaokraglenia aby powstal okrag.
+W ost klasie czyscimy deklaracje i ustawiamy statycznie el 100x100 potem -radius na 50px.
+
 
