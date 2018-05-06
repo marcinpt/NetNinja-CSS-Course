@@ -1,13 +1,25 @@
-/*Block-Level Elements  */
-/*Przyklad zastosowania */
+/*Width & Height*/
 
-a{
-    padding: 20px;
-    margin: 20px;
+/*najpierw styl wspolny dla wszystkich divow wewn div'a z id main-contenet*/
+#main-content div{
     background-color: #ccc;
-    border: 1px solid #aaa;
-    color: #000;
-    text-decoration: none;
-/*teraz wyswietlamy - nachodza - wiec dopisujemy:*/    
+    margin: 0 0 20px 0;
+}
+
+/*teraz style oddzielnie dla 2 1szych divow*/
+.static-width{
+    width: 300px;
+    height: 100px;
+}
+
+.persentage-width{
+    width: 70%;
+    height: 50px;
+        
+}
+
+/*teraz style wspolne dla 2 ost divow*/
+.inline-block{
+    width: 40%;
     display: inline-block;
 }

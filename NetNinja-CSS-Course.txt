@@ -577,4 +577,26 @@ display: inline-bolck;
 Na koniec przyklad zastsowania - linki
 Wyswietlanie inline w zaleznosci od radzaju przegladarki - mozemy sprawdzic na caniuse.com
 
+Lekcja-42
+WIDTH & HEIGHT
+PLiki robocze pusty syntax, w index tworzymy 4 divy z 4 roznymi klasami - jak w pliku.
+Czyli mamy cztery elementy na stronie.
+Poznajemy jaki wpływ na szerokkość tych elementow ma sposób podawania jej wartosci - statycznie w px i procentowo.
+
+Ustalamy width 
+statycznie dla 1go 
+procentowo dla 2go
+
+Teraz chcemy abu 2 dolne divy 
+miały procentowy width i 
+byly traktowane jak IE (inline elements)
+dopisujemy wlasciwosc
+display: inline-block (jak w odwrotnej sytuacji w poprzedniej lekcji)
+
+W obu przypadkach zminiejszamy okno przegladarki i obserwujemy jak sie zachowują nasze elementy:
+jesli mocna zwezimy okno to 1szy el wyjdzie poza obszar rodzica (div z id main-contenet) - bo width ma na stale statycznie.
+2gi TEZ bedzie sie kurczyl razem z oknem i obszarem rodzica - zawsze zachowujac procentowa wartosc width.
+
+3ci i 4ty element ustawia sie jeden-obok-drugiego i tez beda sie kurczyc jak w 2gim el.
+
 
