@@ -650,4 +650,12 @@ UWAGA: Kiedy obie wartosci beada identyczne mozeby zrezygnowac z podwojnego zapi
 Na koniec okreslamy rozmiar dla 1szego w px a dla 2go w % - chodzi o szerokosc tla. 
 Gdyby 2gi byl waski i nie porylby calej wysokosci tla (tylko szerokosc) to mozemy drugia wartoscia 100% rozciagnac na cala wys.
 
+Lekcja-47
+COLOR (Background)
+Pliki robocze: index ten sam - syntax czyscimy i umieszczamy tylko deklaracja dla .banner okreslajaca rozmairy el.
+Poznajemy rodzaje wartosci tej wlasciwosci. Wartosc kolou mozemy podawać na kilka sposobow. Na tej lekcji pznajemy:
+szesnastkowo: Na poczatku wrtosci piszemy"#" Potem: 6 cyfr - 3 pary odpowiednio dla kanałów R, G, i B. Wartosc dla kazdego kanału okreslana  jest szesnastkowo tzn 00 do ff. Gdy zmieniamy tyko jakis kanal przy zerowej wartosci pozostalych to operujemy ciemny-jasny danego koloru np 500000 to bedzie ciemny czerwony itd. 000000 to czarny a ffffff to biały. Mieszajac odpowiednio kanały tworzymy nowe kolory.
+
+przez rgb: qpodajemy wartoscia ostaci rgb(X, X, X), gdzie X to odpowiednio kanał R, G, B o wartosciach 10tnych od 0 do 255.
+
 

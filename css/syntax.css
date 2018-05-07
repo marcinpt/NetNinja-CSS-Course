@@ -1,26 +1,12 @@
-/*Multiple Backgrounds*/
+/*COLOR Backgrounds*/
 
 #banner{
-    background-color: #606060;
     width: 100%;
-    height: 150px;
-
-/*Wstawiamy 2 obrazki:*/
-    background-image: url(http://cdn.networkice.com/gen/ikony-gadu-gadu-100x100.png),  url(https://www.thenetninja.co.uk/img/homepage/banner.png);
-/*teraz wlasciwosci dla powyzszych obu obrazkor*/
+    height: 300px;
+/*okreslenie kolory szesnastkowo*/
 /*
-    background-repeat: no-repeat, no-repeat;
+    background-color: #500000;
 */
-/*gdy identyczne to mozemy zapisac pojedynczo dla obu:*/
-    background-repeat: no-repeat;
-/*pierwszy img w srodku, drugi: top left*/
-    background-position: center, top left;
-/*rozmiar dla 1szego to width 300px, a dla 2giego 100% szerokossci tła*/
-    background-size: 100px, 100%;
+/*okreslenie koloru przez rgb()*/
+    background-color: rgb(150, 0, 0);
 }
-
-
-/*
-https://www.thenetninja.co.uk/img/homepage/banner.png
-http://cdn.networkice.com/gen/ikony-gadu-gadu-100x100.png
-*/
