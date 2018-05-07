@@ -638,4 +638,16 @@ wart-url > wartosc-repeat > poz-vert poz-horiz
 
 Mozna zapisac wiecej dluzszych wersji w krotszej ale moze to prowadzic do zamieszania, a czasami jest wskazane uzyc jednak dlugiej wersji - jak np w naszym przyp color. Gdybysmy zapisali go przed url to obrazek zalkowicie by go przykryl-nadpisal, a jesli zapiszemy go odzielnie pod spodem w dluzszej wersji - to nawet w przypadku niewyswietenia obrazka tlo z dansym kolorem bedzie ustwione.
 
+Lekcja-46
+MULTIPLE BACKGROUNDS
+Pliki robocze - index: zmieniamy zagniezdzony div z klasa na div z id banner, syntax - czyscimy i przygotowujemy linki do 2 obrazkow.
+W css nadajemy styl dla diva zid banner czyli selektor .banner{}
+Ustawiamy kolr tla na szary, szerokosc na 100% i wys na 300px.
+
+Teraz wstawiamy tla (oba) - zasada jest taka ze jedno od drugiego musi byc oddzielone ","
+Potem ustawiamy inne wlasciwosci ALE tym razem beda qone dotyczyc obu obrazków: tu takze odpowiednio - 1sza wartosc bedzie dotyczyc 1szego obrazka, a 2ga drugiego.
+UWAGA: Kiedy obie wartosci beada identyczne mozeby zrezygnowac z podwojnego zapisu.
+Na koniec okreslamy rozmiar dla 1szego w px a dla 2go w % - chodzi o szerokosc tla. 
+Gdyby 2gi byl waski i nie porylby calej wysokosci tla (tylko szerokosc) to mozemy drugia wartoscia 100% rozciagnac na cala wys.
+
 
