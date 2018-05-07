@@ -658,4 +658,20 @@ szesnastkowo: Na poczatku wrtosci piszemy"#" Potem: 6 cyfr - 3 pary odpowiednio 
 
 przez rgb: qpodajemy wartoscia ostaci rgb(X, X, X), gdzie X to odpowiednio kanał R, G, B o wartosciach 10tnych od 0 do 255.
 
+Lekcja-48
+OPACITY - przezroczystosc tła
+Pliki robbocze to index i syntax
+W index mamy tylko zagniezdzone nowe divy z roznymi id, ktore to nadaja im style okreslone w naszym css.
+Kazdy z nich to okrag zrobiony z zaokraglenia rogów bordera, kazdy ma inna pozycje i inny kolor
+
+Dodajemy im przezroczystosc poprzez wlasciwosc:
+opacity - jej wartosc zawiera sie od 0 do 1 - okresla skale przezroczystosci
+Potem wpisujemy w htmlu teksty do kazdego z naszych 3 divow - pokazujemy ze przezroczystkosc takze ich dotyczy! (przy okazji ustawiamy teksty centralnie w gornej cz)
+Jak mozemy zrobic zeby tylko tlo bylo przezroczyste?
+Jest na to sposob - mianowicie zamiana sposobu okreslenia kolor dla tla na:
+
+ - rgba() - gdzie a to kanal alfa (przezroczystosci), W takim przypadku wlasciwosc opacity juz qnie jest 		    nam potrzbna.
+
+Teraz tekst wyswietlany jest jako solid - tylko tło jest przezroczyste.
+
 
