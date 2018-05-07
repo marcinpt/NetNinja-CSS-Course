@@ -613,17 +613,29 @@ Potem z dwiema wartosciami - tu uwaga troche inaczej jak z margin czy padding - 
 Na koniec robimy takie zaokraglenia aby powstal okrag.
 W ost klasie czyscimy deklaracje i ustawiamy statycznie el 100x100 potem -radius na 50px.
 
-Lekcja-45
+Lekcja-44
 BACKGROUNDS
 Pliki robocze index i syntax
 zmieniamy troche index - zostawiamy jeden div z klasa static-width, czyscimy syntax- i ustawiamy style dla klasy .static-width. - width i height.
 Probujemy rozne wlasciwosci zwiazane z tlem: 
 
 bacground-<\/>
-	-color
-	-image url(x) x - adres do obrazka
-	-repeat (wiele mozliwosc jak bez powtorzen, round - rowno przy bokach zmiejszajac rozm, ...
-	-position (mamy wiele mozliwosci jak center, [2-wart left/center/right top/center/bottom], [2-wart od-lewej od-gory] w px lub %
-	-size (px)
+	 -color
+	 -image url(x) x - adres do obrazka
+	 -repeat (wiele mozliwosc jak bez powtorzen, round - rowno przy bokach zmiejszajac rozm, ...
+	 -position (mamy wiele mozliwosci jak center, [2-wart left/center/right top/center/bottom], [2-wart 			   od-lewej od-gory] w px lub %
+	 -size (px)
+
+Lekcja-45
+BACKGROUNG SHORTHAND
+Krotszy sposob stylizowania wlasciwoscia bacground. Wiele wersji z poprzedniej lekcji da sie zapisac w krotszej wersji - za pomoca pojedynczego background.
+Pliki robocze dokladnie takie same i niemienione z poprzedniej lekcji - index isyntax.
+W css zakomentujemy wesje z lekcji 44 i pokazujemy jak wiekszosc z dlugich wersji zastapimy krotsza.
+
+Wartości wersji dluzszej musa byc w odpow kolejnosci 
+- u nas: 
+wart-url > wartosc-repeat > poz-vert poz-horiz
+
+Mozna zapisac wiecej dluzszych wersji w krotszej ale moze to prowadzic do zamieszania, a czasami jest wskazane uzyc jednak dlugiej wersji - jak np w naszym przyp color. Gdybysmy zapisali go przed url to obrazek zalkowicie by go przykryl-nadpisal, a jesli zapiszemy go odzielnie pod spodem w dluzszej wersji - to nawet w przypadku niewyswietenia obrazka tlo z dansym kolorem bedzie ustwione.
 
 

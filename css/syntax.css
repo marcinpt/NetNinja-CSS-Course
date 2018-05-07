@@ -1,4 +1,4 @@
-/*Backgrounds*/
+/*Backgrounds Shorhand*/
 
 .static-width{
     width: 400px;
@@ -7,15 +7,28 @@
     background-color: #606060;
     
 /*tlo jako obrazek*/
+/*
     background-image: url(http://cdn.networkice.com/gen/ikony-gadu-gadu-100x100.png);
+*/
     
 /*bez powtorzen*/
+/*
     background-repeat: no-repeat;
+*/
     
 /*pozycja obrazka na srodku, ale mozemy:
-okreslic dwoma parametrami daokladnie jaka chcemy pozycje - poprzez 2 wartosci - wspolrzedne: [% lub px od lewej] [% lub px od gory] lub kombin 2-wart [left/right top/bottom]*/
-    background-position: center;
+okreslic dwoma parametrami daokladnie jaka chcemy pozycje - poprzez 2 wartosci - wspolrzedne: [% lub px od lewej] [% lub px od gory] lub kombin 2-wart [left/center/right top/center/bottom]*/
+/*
+    background-position: top center;
+*/
 
 /*rozmiar obrazka*/
+/*
+    background-size: 300px;
+*/
+    
+/*Background shorthand*/
+    background: url(http://cdn.networkice.com/gen/ikony-gadu-gadu-100x100.png) no-repeat top center;
+    background-color: #606060;
     background-size: 300px;
 }
