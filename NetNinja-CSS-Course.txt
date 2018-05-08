@@ -674,4 +674,48 @@ Jest na to sposob - mianowicie zamiana sposobu okreslenia kolor dla tla na:
 
 Teraz tekst wyswietlany jest jako solid - tylko tło jest przezroczyste.
 
+Lekcja-49
+GRADIENS
+Co to jest gradjent - płynne przejscie z jednego koloru do drugiego lub jasniejszego do ciemniejszego.
+Wykorzystamy efekt gradjentu do zbudowania fajnie wygladającego przycisku.
+Pliki robocze: index.html - w nim tylko zagniezdzony w glownym divie a link z klasa button i tekstem "Click me". Synstax.css czyscimy i okreslamy styl dla naszej klasy button. W deklaracji mamy nast wlasciwosci:
+display
+width
+padding
+border
+font-family
+tekst-transform
+color
+font-size
+text-align
+border-radius
+background
+
+Zanim wstawimy nasz gradient zostawiamy nasze ww tlo jak jest bo nektore starsze przegladrki nie obsluguja gradientow.
+Gradienty wstawiamy za pomoca pary wlasciwosci background i jej wartości linear-gradeint() - jak nizej:
+background: linear-gradient(x, x x, x x) - gdzie iks-y to argumenty tej wrtosci np:
+background: linear-gradient(top, #ffaaaa 0%, #aaffff 100%)
+wyjasnienie argumentow:
+top - od jakiej strony ma sie gradient zaczac. Tu od gory do dołu
+1szy kolor #... - od jakiego koloru ma sie zaczac przejscie
+0% - zaczyna sie od samej góry (przejscie zachodzi od samego poczatku). U nas od samej góry.
+2gi kolor #... - kolor na jaki chcemy przejsc
+100% zakonczenie ma byc na samym dole.
+
+Uwaga: Gradienty to relatywnie nowa funkcja i jesli nasza przegladarka jej nie obsluzy musimy zastosowac ponizsze wpisy wykorzystujące tzw vendor-prefx PRZED WARTOSCIA:
+background: -moz-linear-gradient(top, #ffaaaa 0%, #aaffff 100%)
+background: -webkit-linear-gradient(top, #ffaaaa 0%, #aaffff 100%)
+background: linear-gradient(top, #ffaaaa 0%, #aaffff 100%)
+
+Te wpisy musza byc w kolejnosci - kaskada - czyli bierz background wtedy jesli 1 to ok jesli nie to 2gi jesli nie to 3ci.
+
+-moz- - firefox
+-webkit- - safari opera chrome...
+
+Teraz na koniec robimy efekt z hover
+Wklejamy do deklaracji z nasza "hoverow'ym buttonem" (#button:hover{...}) wszystkie nasze wlasciwosci dot tła. Tutaj w naszym 1szym tle gdzie jest qbez gradientu zmieniamy kolor na 2gi, a w tłach gradientowych zamieniamy kierunek przejscia z top-bottom na bottom-top (czyli ustawiamy na bottom).
+
+W celdu przetestowania gradientow wczesniej i pozniejszego copy-paste sugerowana strona:
+http://www.colorzilla.com/gradient-editor/
+
 

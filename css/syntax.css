@@ -1,45 +1,31 @@
-/*Opacity*/
+/*Gradients*/
 
-#circle{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    background: rgb(200, 200, 100);
-    border-radius: 200px;
-    top: 50px;
-    left: 50px;
-    opacity: 1;
+.button{
+    display: block;
+    width: 100px;
+    padding: 12px;
+    border: 1px solid #77aaaa;
+    border-radius: 4px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
     text-align: center;
+    background: #aadddd;
+/*1sze co robimy to zostawiamy ww background bo starsze przegladarki. 2 Gradienty wstawiamy jak ponizej*/
+/*
+    background: linear-gradient(top, #aadddd 0%, #77aaaa 100%);
+*/
+/*jesli przegladarka nie obsluguje (nowa funkcja) to robimy x3 i stosujemy vendor-prefix'y przy wartosciach*/
+    background: -moz-linear-gradient(top, #aadddd 0%, #77aaaa 100%);
+    background: -webkit-linear-gradient(top, #aadddd 0%, #77aaaa 100%);
+    background: linear-gradient(top, #aadddd 0%, #77aaaa 100%);
 }
 
-#circle-2{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    background: rgb(200, 100, 200);
-    border-radius: 200px;
-    top: 250px;
-    left: 150px;
-    opacity: 0.3;
-    text-align: center;
-}
-
-#circle-3{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-/*
-    background: rgb(100, 200, 200);
-*/
-/*zamieniamy rgb() na rgba()*/
-    background: rgba(100, 200, 200, 0.1);
-
-    border-radius: 200px;
-    top: 50px;
-    left: 250px;
-/*usuwamy opacity bo dodalismy rgba()*/
-/*
-    opacity: 0.1;
-*/
-    text-align: center;
+.button:hover{
+    background: #77aaaa;
+    background: -moz-linear-gradient(bottom, #aadddd 0%, #77aaaa 100%);
+    background: -webkit-linear-gradient(bottom, #aadddd 0%, #77aaaa 100%);
+    background: linear-gradient(bottom, #aadddd 0%, #77aaaa 100%);
 }
