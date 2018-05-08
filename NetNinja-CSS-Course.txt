@@ -718,4 +718,21 @@ Wklejamy do deklaracji z nasza "hoverow'ym buttonem" (#button:hover{...}) wszyst
 W celdu przetestowania gradientow wczesniej i pozniejszego copy-paste sugerowana strona:
 http://www.colorzilla.com/gradient-editor/
 
+Lekcja-50
+BOX SHADOW
+Cien dla pojemnika (pudełka, box'a) wstawiamy za pomocą właściwości z przykładowyi wartościami:
+box-shadow: 2px 2px 4px 2px rgba() ...te okreslenie koloru na koncu moze byc #, nazwa lub inna (Tu jest 				   przez rgba() bo chcemy zaaplikowac przezroczystosc.
+
+Wyjasnienie:
+1sza odleglosc (length x, offset-x) to odleglosc-przesuniecie pozioma
+1ga odleglosc (length y, offset-y) to odleglosc-przesuniecie pionowa
+3cia - blure-radius - rozmycie (domyslnie 0 czyli ostry cien)
+4ta - spread-radius - zwiekszenie sie cienia (domyslnie 0 czyli taki sam rozmiar co element)
+5ty - kolor (moze byc z przezroczystoscia przez rgba() )
+
+Mozna stosowac z vendor prefixami ale obecnie juz wiekszosc pzregladarem obsluguje cienie.
+W celu przetestowania mozemy wczesniej tu:
+http://www.cssmatic.com/box-shadow
+
+
 
