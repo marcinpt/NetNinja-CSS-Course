@@ -734,5 +734,25 @@ Mozna stosowac z vendor prefixami ale obecnie juz wiekszosc pzregladarem obslugu
 W celu przetestowania mozemy wczesniej tu:
 http://www.cssmatic.com/box-shadow
 
+Lekcja-51
+BROWSER SUPPORT
+Projektując strone musimy zawsze sprawdzic jak jest wyswietlana w innych przegladarkach niz nasza.
+Nie kazda przegladarka w pełni obsluguje standard css3. Jesli sie okaze ze w niektórych przypadkach nasza strona nie wyglada tak jak bysmy chcieli mozemy uzyc tzw FALLBACK OPTIONS Jest to wczesniejsza opcja (właściwość) która zostanie zaplikowana w przypadku nieobsługiwania tej której chcielismy. przykład:
+
+.rule{
+bacground: #fff;
+background: linear-gradient(top, blue 0%, red 100%);
+}
+
+To działa na zasadzie kaskady - 2ga zostaqje nadpisana na 1szej ale w przypadksu gdy nie obsluzy zostaje przy 1szej opcji.
+
+Sugerowna strona gdy chcemy sprawdzic jakas funkcje czy jest obslugiwana przezdana przegladarke.
+http://www.caniuse.com
+
+inna strona gdzie mozemy sprawdzic czy sa vedor prefix'y dla eksperymentalnych kodów. To podwojne okno gdzie do lewej wpisujemy sprawdzany kod a po prawej mamy propozycje mogace zadziałać - to:
+http://pleeease.io/play
+
+Inna strona to miejsce gdzie mamy - w przypadku gdzy nasze funkcje html5 i css3 nie diałaja tak jak chcemy - alternatywne biblioteki JavaScript. To:
+http://modernizr.com
 
 
