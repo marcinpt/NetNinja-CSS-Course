@@ -755,4 +755,30 @@ http://pleeease.io/play
 Inna strona to miejsce gdzie mamy - w przypadku gdzy nasze funkcje html5 i css3 nie diałaja tak jak chcemy - alternatywne biblioteki JavaScript. To:
 http://modernizr.com
 
+Lekcja-52
+CSS WEBSITE BUILD PART 1
+Budujemy strone - cz1
+Tworzymy jedna ze stron sklepu internetowego od podstaw.
+Projekt gotowej strony mozemy pobrac na git'cie na profilu iamshaunjp
+Znajduje sie w pdkatalogu Bikes-Website-master naszego kursu
+
+HTML
+1. Head - przygotowujemy sobie sekcje head gdzie najwazniejsze linkujemy do naszego pliku css
+2. Body - najpierw wstawiamy glowny blok div z id wrapper ktory bedzie zawieral caly nasz kontent. (pamietajmy ze style beda dziedziczone na wszystkich potomkow).
+3. Tworzymy sekcje nawigacyjna tagiem <nav> - ktory jest blokiem wlasciwym do zawarcia listy linków do innych stron badz miejsc na stronie glownej. Nadajemy mu id main-navigation. Wlasnie w postaci listy (ul) a linkow zawartych w li. Dlaczego tak - bo lista to el blokowy i jak zastosujemy pozniej w css display: inline-block bedzie nam łatwo je kontrolować. Sa tez inne zalety...
+1szy el li bedzie szczegolny dlatego oznaczamy go klasa current.
+4. nastepnie blok z id lead-banner zawierajacy glowny banner graficzny strony
+5. Tworzymy nowa posekcje z tagu <section> - podobnie jak nav - nowego dla nas tagu selection. Podobnie jak narazie traktujemy go jako el pozwalajacy utrzymac składnie kodu. Nadajemy mu id shop
+6. Wewn section umieszczamy obrazek, h2 (h2 to tez el blokowy), el span z tekstem-cena (span to el inline), a link z tekstem "Dodaj do koszyka" oraz na koniec obrazek-gwiazdki-rating. Wszystkie elementy w section maja zawarta jakas klase ktora wykorzystamy potem w css.
+7. Koncowa podsekcja (w sekcji z id wrapper) z grafika stopki strony. Dajemu mu id footer-banner.
+
+CSS
+1. Najpierw selektor do body i deklaracje ktore beda dziedziczone w dol na potomkw: 3 wlasciwosci w deklaracji - margin 0, font-family arial, tło jakies jasne - tu mały trik: jesli mamy wszystkie takie same: #eeeeee to mozemy uzyc krotszej formy: #eee.
+2. Teraz styl dla el majacego id wrapper (czyli nasza glowna sekcja div): tu okreslamy width na 980px, margin 0, auto (czyli top-bottom po 0 a po bokach auto zeby zawsze bylo po srodku glownego tla - z body) i kolor tla na bialy #fff.
+3. Stylizujemy nasza navigacje - wystarczy selektor z id - #main-navigation. Ustawiamy: dla tego calego bloku-pudełka tło ciemne i wewn marginesy - padding 10px.
+4. Stylizujemy teraz calą liste ul (z il'ami (item list) gdzie zawarte sa a linki). Selektorem bedzie id main-navigation (rodzic) spacja ul (potomek) - to wystarczy bo i tak nie mamy tylko ta jedna liste. Ustawiamy: liste po prawej stronie bloku (text-align: right), usuwamy kropki na poczatku kazdego li (list-style-type: none), margin prawej strony (margin-right)  na 10px w celu odsuniecia listy od prawej krawedzi boxu.
+5. Teraz przyszla kolej na same li - jak pamietamy ul z li to elementy blokowe - czyli zajmuja soba cala szerokosc dostepnego wiersza. Chcemy jednak wyswietlic je jeden-za-drugim tak jak el inline wiec: selektor podobny do plt4 ale z li i w deklar display: inline-block. Dodajemy tez lewy margin na 20px zeby je troche odsunac od siebie.
+6. Teraz przyszla kolej na same a linki - selektor #main-navigation a{} tu tez nie musimy twozyc bardziej specyficznych selektorów (na #... ul li a{}) bo mamy tylko te. Stylizujemy tu text liku - ustawiamy: kolor, zdejmujemy podkreslenie, zamieniamy litery na duze, rozmiar na 14pc i wewn padding na 6px.
+6. pierwszemu linkowi chcemy nadac styl troche sie wyrozniajacy - po to nam klasa current w a linku. Teraz jestesmy w satanie skonstruowac specyficzny selektor: #main-navigation a.current{...}. Teraz w dekl ustawiamy tlo na inne fajne i ramke z zaokraglona na 4px.
+
 
