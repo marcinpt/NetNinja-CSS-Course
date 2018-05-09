@@ -781,4 +781,17 @@ CSS
 6. Teraz przyszla kolej na same a linki - selektor #main-navigation a{} tu tez nie musimy twozyc bardziej specyficznych selektorów (na #... ul li a{}) bo mamy tylko te. Stylizujemy tu text liku - ustawiamy: kolor, zdejmujemy podkreslenie, zamieniamy litery na duze, rozmiar na 14pc i wewn padding na 6px.
 6. pierwszemu linkowi chcemy nadac styl troche sie wyrozniajacy - po to nam klasa current w a linku. Teraz jestesmy w satanie skonstruowac specyficzny selektor: #main-navigation a.current{...}. Teraz w dekl ustawiamy tlo na inne fajne i ramke z zaokraglona na 4px.
 
+Lekcja-53
+CSS WEBSITE BUILD PART 2
+
+CSS - cd
+7. Kolejny etap - nasz główny górny baner. Grafika nie zajmuje całej dostepnej szerokosci div'a. Musimy go rozciagac nadajac mu width rowny 100% Selektorem bedzie id i potomek img
+8. Przyszła pora nadac styl dla sekcji po ktorej dziedzicyc beda rowniez elemnty zawarte w niej. Jest to sekcja section - podobnie jak nav - nowy tag ktorego zadaniem też jest utrzymac skladnie kodu Nadajemy margin gora-dol na 30px (dla utworzenia odleglosci od gornego i dolnego banera), a boczne na 0. Teraz - UWAGA - wlasciwoscia text-align z wartoscia center ustawiamy wszystkich potomków na srodku sekcji - nawet obrazek (działa nie tylko na teksty - tak działa ta wlasciwosc). Selektorem bedzie tylko id zawarte w tagu section.
+9. Stylizujemy teraz naglowek h2 zawarty w section - selektor bedzie bardziej specyficzny bo id-rodzica potomek.klasa{}. Tu ustawiamy tylko rozmiar czcionki i dolny marginez na 0 bo chcemy zeby cena byla zaraz pod tym naglowkiem.
+10. Cena - jest zawarta w span - a jak wiemy to juz jest element liniowy. Chcemy jednak zeby byl jak blok - czyli zajal na wylacznosc caly wiersz - display: block (selektorem bedzie id-rodzica potomek.klasa{}). Rozmiar tekstu zwiekszamy zeby dlugosc byla podobna do naglowka ktory jest nad nim.
+11. styl dla a linku. Selektorem bedzie analogicznie do powyzszych el - id-rodzica a.klasa{}. Tu tez ustawiamy wyswietlanie jako blok, kolor tekstu, uppercase, pozbycie sie podkreslenia, rozmiar tekstu, padding na 10 aby odsunac tekst od ramki, ramke, dlugosc skaracamy do wielk jak przycisk, margines gora-dol aaby osunac od sasiadow a boki na auto aby wysrodkowac. Ponizej tego stylu robimy efekt z hover gdzie okreslamy kolor tla i kolor txt na przeciwny.
+18. Na koniec baner w stopce - rozcigamy go tylko na cala szerokosc. Selektorem bedzie id-rodzica-diva img{}
+
+KONIEC KURSU
+
 
